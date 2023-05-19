@@ -16,9 +16,9 @@ const Layout = ({ children }) => {
     `);
 
     return (
-        <div className="main">
+        <div className="bg-gray-300">
             <Header siteTitle={data.site.siteMetadata?.title || `Seovileo`} />
-            <main className="w-full overflow-hidden">{children}</main>
+            <main className="w-full overflow-hidden main bg-white text-center">{children}</main>
 
             <Footer />
         </div>

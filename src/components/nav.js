@@ -55,7 +55,7 @@ const Header = () => {
                     >
                         <div
                             className={`h-auto transition-all duration-200 ${
-                                navbar || showMenu ? "w-12" : "w-14 lg:w-17"
+                                navbar || showMenu ? "w-12" : "w-12 lg:w-20"
                             } `}
                         >
                             <StaticImage
@@ -70,22 +70,20 @@ const Header = () => {
                     <button
                         aria-label="Menu"
                         onClick={handleMenu}
-                        className={`group lg:hidden p-2.5 transition-colors duration-200 z-50 rounded-lg ${
-                            navbar ? "bg-children-slate" : "bg-children-white"
-                        }`}
+                        className={`group lg:hidden p-2.5 transition-colors duration-200 z-50 rounded-lg`}
                     >
                         <div
-                            className={`w-5 h-1 transition-all duration-200 m-1 rounded-lg ${
+                            className={`w-5 h-1 transition-all duration-200 m-1 bg-slate-100 rounded-lg ${
                                 showMenu ? "translate-y-2 rotate-45" : ""
                             }`}
                         />
                         <div
-                            className={`w-3 h-1 transition-all duration-200 m-1 rounded-lg ${
+                            className={`w-3 h-1 transition-all duration-200 m-1 bg-slate-100 rounded-lg ${
                                 showMenu ? "opacity-0" : ""
                             }`}
                         />
                         <div
-                            className={`w-5 h-1 transition-all duration-200 m-1 rounded-lg ${
+                            className={`w-5 h-1 transition-all duration-200 m-1 bg-slate-100 rounded-lg ${
                                 showMenu ? "-translate-y-2 -rotate-45" : ""
                             }`}
                         />
