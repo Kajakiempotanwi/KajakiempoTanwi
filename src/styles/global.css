@@ -1,62 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-html {
-    scroll-padding-top: 50px;
+/* 
+  Note: The styles for this gradient grid background is heavily inspired by the creator of this amazing site (https://dub.sh) – all credits go to them! 
+*/
+.main {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 0 24px 160px 0;
 }
 
-@font-face {
-    font-family: "Pacifico";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Pacifico Regular"), local("Pacifico-Regular"),
-        url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2)
-            format("woff2");
-    font-display: swap;
+@media screen and (max-width: 640px) {
+    .main {
+        padding: 0;
+    }
 }
 
-body {
-    font-family: "Open Sans";
-    background-color: #f8f8f8;
+
+/* Tailwind Styles */
+
+.orange_gradient {
+    @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
+}
+.green_gradient {
+    @apply bg-gradient-to-r from-green-400 to-green-500 bg-clip-text text-transparent;
+}
+.blue_gradient {
+    @apply bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent;
+}
+.desc {
+    @apply mt-5 text-lg text-gray-600 sm:text-xl max-w-2xl;
 }
 
-.titleSection {
-    color: #333c51;
+/* Nav Component */
+.dropdown {
+    @apply absolute right-0 top-full mt-3 w-full p-5 rounded-lg bg-white min-w-[210px] flex flex-col gap-2 justify-end items-end;
 }
 
-.btn {
-    @apply inline-block px-7 py-3 bgLogoColor text-white font-medium text-sm leading-snug uppercase rounded bg-gradient-to-tr from-gray-900 to-gray-700 shadow-gray-900 hover:bg-gray-800 hover:shadow-lg focus:bg-gray-800 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-200 ease-in-out;
+.flex-center {
+    @apply flex justify-center items-center;
 }
-.btnEmerald {
-    @apply inline-block px-7 py-3 bgLogoColor text-white font-medium text-sm leading-snug uppercase rounded bg-gradient-to-tr from-emerald-800 to-emerald-600 shadow-emerald-800 hover:bg-gray-800 hover:shadow-lg focus:bg-gray-800 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out;
+.flex-start {
+    @apply flex justify-start items-start;
 }
-.btnRed {
-    @apply inline-block px-5 py-2 bgLogoColor text-white font-medium text-sm leading-snug uppercase rounded bg-gradient-to-tr from-red-800 to-red-500 hover:bg-gray-800 hover:shadow-lg focus:bg-gray-800 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition-all duration-200 ease-in-out;
+.flex-end {
+    @apply flex justify-end items-center;
 }
-.btnOrange {
-    @apply inline-block px-7 py-3 bgLogoColor text-white font-medium text-sm leading-snug uppercase rounded bg-gradient-to-tr from-amber-600 to-amber-300 shadow-amber-600 hover:bg-gray-800 hover:shadow-lg focus:bg-gray-800 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition-all duration-200 ease-in-out;
-}
-.btnBlue {
-    @apply inline-block px-7 py-3 bgLogoColor text-white font-medium text-sm leading-snug uppercase rounded bg-gradient-to-tr from-blue-600 to-blue-400 shadow-blue-600 hover:bg-gray-800 hover:shadow-lg focus:bg-gray-800 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition-all duration-200 ease-in-out;
-}
-
-.linkColor {
-    color: #357b0a;
-}
-
-.link {
-    font-size: 14px;
-    color: rgb(243, 244, 246);
-}
-.linkFooter {
-    color: #828996;
-    font-size: 14px;
-}
-
-.hoverLink:hover {
-    color: #e4b827;
-}
-.bgLogoColor {
-    background-color: #2d3d4b;
+.flex-between {
+    @apply flex justify-between items-center;
 }

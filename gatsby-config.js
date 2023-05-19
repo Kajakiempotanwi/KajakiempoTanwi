@@ -5,7 +5,7 @@
 module.exports = {
     pathPrefix: "/kajakigatsby",
     siteMetadata: {
-        title: `Kajaki Po Tanwi`,
+        title: `Wypożyczalnia Kajaków`,
         description: ``,
         author: `Seovileo`,
         siteUrl: `https://seovileo.pl/`,
@@ -62,7 +62,7 @@ module.exports = {
                 background_color: `#0C0904`,
                 theme_color: `#0C0904`,
                 display: `standalone`,
-                icon: `src/assets/logoBrowser.png`,
+                icon: `src/assets/favicon.png`,
             },
         },
     ],
