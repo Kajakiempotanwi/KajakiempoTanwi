@@ -3,23 +3,14 @@
  */
 
 module.exports = {
-    pathPrefix: "/seovileov3",
+    pathPrefix: "/kajakigatsby",
     siteMetadata: {
-        title: `Stwórz swoja stronę internetową`,
-        description: `Tworzenie Szybkich i Przyjaznych dla SEO Stron Internetowych z Niezależnym Freelancerem Korzystającym z Technologii GatsbyJS`,
+        title: `Kajaki Po Tanwi`,
+        description: ``,
         author: `Seovileo`,
         siteUrl: `https://seovileo.pl/`,
     },
     plugins: [
-        {
-            resolve: `gatsby-plugin-google-gtag`,
-            options: {
-                trackingIds: ["G-9RH800R54W"],
-                pluginConfig: {
-                    head: true,
-                },
-            },
-        },
         {
             resolve: `gatsby-transformer-remark`,
             options: {},
@@ -27,7 +18,7 @@ module.exports = {
         {
             resolve: `gatsby-source-datocms`,
             options: {
-                apiToken: `0e6621bdd35bb44a65efb5a356263a`,
+                apiToken: `b7034332f28b2c0211b44f84c07c74`,
                 environment: `main`,
                 previewMode: false,
                 disableLiveReload: false,
@@ -65,7 +56,7 @@ module.exports = {
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
-                name: `Seovileo`,
+                name: `Kajaki Po Tanwi`,
                 short_name: `starter`,
                 start_url: `/`,
                 background_color: `#0C0904`,
