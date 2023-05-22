@@ -5,7 +5,7 @@
 module.exports = {
     pathPrefix: "/kajakigatsby",
     siteMetadata: {
-        title: `Wypożyczalnia Kajaków`,
+        title: `Spływy Kajakowe`,
         description: ``,
         author: `Seovileo`,
         siteUrl: `https://seovileo.pl/`,
@@ -52,7 +52,23 @@ module.exports = {
             },
         },
         `gatsby-transformer-sharp`,
-        `gatsby-plugin-sharp`,
+        {
+            resolve: `gatsby-plugin-sharp`,
+            options: {
+                defaults: {
+                    formats: [`auto`, `webp`],
+                    placeholder: `dominantColor`,
+                    quality: 50,
+                    breakpoints: [750, 1080, 1366, 1920],
+                    backgroundColor: `transparent`,
+                    blurredOptions: {},
+                    jpgOptions: {},
+                    pngOptions: {},
+                    webpOptions: {},
+                    avifOptions: {},
+                },
+            },
+        },
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
@@ -62,7 +78,7 @@ module.exports = {
                 background_color: `#0C0904`,
                 theme_color: `#0C0904`,
                 display: `standalone`,
-                icon: `src/assets/favicon.png`,
+                icon: `./src/assets/favicon.png`,
             },
         },
     ],

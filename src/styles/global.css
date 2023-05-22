@@ -12,27 +12,40 @@
     min-height: 100vh;
     margin: 0 auto;
 }
-
 @media screen and (max-width: 640px) {
     .main {
         padding: 0;
     }
 }
 
+.p_kayak{
+    @apply text-center w-max text-[13px] border-b-2 border-[#2fb9c5] text-[#2fb9c5] font-bold mx-auto rounded-sm -tracking-wide
+}
+.Link_kayak{
+    @apply text-center w-max text-sm text-[#2fb9c5] font-bold mx-auto rounded-sm 
+}
+
+a{
+    @apply transition-colors duration-150
+}
+.btn_main{
+    @apply border-2 border-[#0191AE] bg-[#04AED1] text-white px-6 py-2 rounded-3xl
+}
+
 
 /* Tailwind Styles */
 
 .orange_gradient {
-    @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-amber-500 font-bold via-orange-600 to-yellow-500 bg-clip-text text-transparent;
 }
 .green_gradient {
-    @apply bg-gradient-to-r from-green-400 to-green-500 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-green-400 font-bold to-green-500 bg-clip-text text-transparent;
 }
 .blue_gradient {
-    @apply bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-blue-600 font-bold to-cyan-600 bg-clip-text text-transparent;
 }
 .desc {
-    @apply mt-5 text-lg text-gray-600 sm:text-xl max-w-2xl;
+    @apply mt-5 text-lg text-gray-600 font-bold sm:text-xl max-w-2xl;
 }
 
 /* Nav Component */
