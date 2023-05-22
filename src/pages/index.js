@@ -14,7 +14,7 @@ const Home = () => {
                     loading="eager"
                     className="w-full h-full min-h-[23rem]"
                     alt="Kajaki Po Tanwi"
-                    src="../assets/hero.jpg"
+                    src="../static/hero.jpg"
                 />
                 <div className="absolute w-full h-full inset-0 opacity-50 bg-[#00232E]" />
                 <div className="absolute w-full left-1/2 top-1/2 px-4 -translate-x-1/2 -translate-y-1/2">
@@ -50,7 +50,7 @@ const Home = () => {
                         <StaticImage
                             quality={100}
                             className="w-full"
-                            src="../assets/cards/k1.jpg"
+                            src="../static/cards/k1.jpg"
                         />
 
                         <h3 className="py-4 px-3 font-bold">SPRZĘT</h3>
@@ -67,7 +67,7 @@ const Home = () => {
                         <StaticImage
                             quality={100}
                             className="w-full"
-                            src="../assets/cards/k2.jpg"
+                            src="../static/cards/k2.jpg"
                         />
 
                         <h3 className="py-4 px-3 font-bold">PRZYGODA</h3>
@@ -84,7 +84,7 @@ const Home = () => {
                         <StaticImage
                             quality={100}
                             className="w-full"
-                            src="../assets/cards/k3.jpg"
+                            src="../static/cards/k3.jpg"
                         />
 
                         <h3 className="py-4 px-3 font-bold">DLA DZIECI</h3>
@@ -103,14 +103,16 @@ const Home = () => {
             </section>
 
             <section id="etaps" className=" relative py-6">
-                <StaticImage
-                    quality={100}
-                    layout="constrained"
-                    loading="spływy kajakowe"
-                    className="w-full h-full min-h-max absolute inset-0 -z-20"
-                    alt="Kajaki Po Tanwi"
-                    src="../assets/etaps.jpg"
-                />
+                <div className=" absolute inset-0 -z-20 w-full h-full">
+                    <StaticImage
+                        quality={100}
+                        layout="constrained"
+                        loading="spływy kajakowe"
+                        className="w-full h-full"
+                        alt="Kajaki Po Tanwi"
+                        src="../static/etaps.jpg"
+                    />
+                </div>
                 <div className="absolute inset-0 bg-black opacity-50 -z-10" />
                 <div className="grid md:grid-cols-2 max-w-screen-xl mx-auto px-6 text-white">
                     <div>
@@ -160,6 +162,6 @@ const Home = () => {
     );
 };
 
-export const Head = () => <Seo title="Kajaki Po Tanwi" />;
+export const Head = () => <Seo title="Kajakami Po Tanwi" />;
 
 export default Home;

@@ -66,7 +66,7 @@ const Header = () => {
                                 loading="eager"
                                 placeholder="blurred"
                                 alt="Kajaki Po Tanwi Logo"
-                                src="../assets/lt.png"
+                                src="../static/lt.png"
                             />
                         </div>
                         <p

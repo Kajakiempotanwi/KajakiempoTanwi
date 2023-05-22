@@ -9,7 +9,7 @@ const Footer = () => (
             height={75}
             width={75}
             className=" -mt-10"
-            src="../assets/logoWhite.png"
+            src="../static/logoWhite.png"
         />
         <div className="flex-center flex-col">
             <p className="text-lg font-bold mb-4">Kontakt</p>
@@ -70,7 +70,7 @@ const Footer = () => (
                         quality={100}
                         height={33}
                         width={33}
-                        src="../assets/facebook.png"
+                        src="../static/facebook.png"
                     />
                 </Link>
                 <Link to="https://www.instagram.com/kajakiempotanwi/?igshid=ZGUzMzM3NWJiOQ%3D%3D&fbclid=IwAR3KMcH9JdBcMrolmljM264sarvvk8xuibITApf9M6KBNud7tiR7egu0OZg">
@@ -78,7 +78,7 @@ const Footer = () => (
                         quality={100}
                         height={33}
                         width={33}
-                        src="../assets/instagram.png"
+                        src="../static/instagram.png"
                     />
                 </Link>
             </div>

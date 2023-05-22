@@ -6,7 +6,7 @@ module.exports = {
     pathPrefix: "/kajakigatsby",
     siteMetadata: {
         title: `Spływy Kajakowe`,
-        description: ``,
+        description: `Spływy kajakowe Kajakami po Tanwi`,
         author: `Seovileo`,
         siteUrl: `https://seovileo.pl/`,
     },
