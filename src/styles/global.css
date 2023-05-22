@@ -19,10 +19,11 @@
 }
 
 .p_kayak{
-    @apply text-center w-max text-[13px] border-b-2 border-[#2fb9c5] text-[#2fb9c5] font-bold mx-auto rounded-sm -tracking-wide
+    text-shadow: 0 0 4px #00B0BD;
+    @apply text-center w-max text-[13px] border-b-2 border-[#005719] text-[#005719] shadow-[#00B0BD] font-bold mx-auto rounded-sm -tracking-wide
 }
 .Link_kayak{
-    @apply text-center w-max text-sm text-[#2fb9c5] font-bold mx-auto rounded-sm 
+    @apply text-center w-max text-sm text-[#005719] font-bold mx-auto rounded-sm 
 }
 
 a{

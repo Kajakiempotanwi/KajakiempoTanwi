@@ -65,7 +65,7 @@ const Footer = () => (
             </Link>
             <p className="text-lg font-bold mb-4 ">Media Społecznościowe</p>
             <div className="flex-center space-x-4 mb-6">
-                <Link to="https://www.facebook.com/kajakiempotanwi">
+                <Link aria-label="Facebook" to="https://www.facebook.com/kajakiempotanwi">
                     <StaticImage
                         quality={100}
                         height={33}
@@ -73,7 +73,7 @@ const Footer = () => (
                         src="../static/facebook.png"
                     />
                 </Link>
-                <Link to="https://www.instagram.com/kajakiempotanwi/?igshid=ZGUzMzM3NWJiOQ%3D%3D&fbclid=IwAR3KMcH9JdBcMrolmljM264sarvvk8xuibITApf9M6KBNud7tiR7egu0OZg">
+                <Link aria-label="Instagram" to="https://www.instagram.com/kajakiempotanwi/?igshid=ZGUzMzM3NWJiOQ%3D%3D&fbclid=IwAR3KMcH9JdBcMrolmljM264sarvvk8xuibITApf9M6KBNud7tiR7egu0OZg">
                     <StaticImage
                         quality={100}
                         height={33}
