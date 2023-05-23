@@ -4,7 +4,6 @@ import Seo from "../components/seo";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import ReactPlayer from 'react-player'
-import V1 from "../../static/video/v1.mp4"
 import vv from "../../static/video/vv.mp4"
 
 
@@ -632,7 +631,7 @@ const Home = () => {
             </section>
 
             <section id="video" className="bg-[#E2E9E8] pt-6 md:py-12">
-                <ReactPlayer light className="mx-auto w-full h-auto" url={vv} />
+                <ReactPlayer autoplay muted controls className="mx-auto w-full h-auto" url={vv} />
             </section>
         </Layout>
     );
