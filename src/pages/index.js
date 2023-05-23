@@ -454,7 +454,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <section id="happy" className="pt-6 md:py-12">
+            <section id="happy" className="py-6 md:py-12">
                 <div className="mb-3">
                     <p className="p_kayak">KAJAKI PO TANWI</p>
                     <h2 className="font-bold text-lg text-gray-700">
@@ -629,21 +629,28 @@ const Home = () => {
                 </div>
             </section>
 
-            <section id="video" className="bg-[#E2E9E8] pt-6 md:py-12">
-                <ReactPlayer
-                    autoplay
-                    muted
-                    controls
-                    className="mx-auto w-full h-auto"
-                    url={vv}
-                />
-                <p className="mt-12">
+            <section id="video" className="bg-[#E2E9E8] py-10 md:py-16">
+                <div className="w-96 sm:w-[32] h-auto mx-auto rounded-md overflow-hidden">
+                    <ReactPlayer
+                        muted
+                        playing
+                        playIcon
+                        controls
+                        width="100%"
+                        height="100%"
+                        className="mx-auto w-full h-auto"
+                        url={vv}
+                    />
+                </div>
+                <playIcon />
+                <p className="mt-6 px-6">
                     There are many variations of passages of Lorem Ipsum
                     available, but the majority have suffered There are many
                     variations of passages of Lorem Ipsum available, but the
                     majority have suffered{" "}
                 </p>
             </section>
+            <div className="h-[200vh]" />
         </Layout>
     );
 };
