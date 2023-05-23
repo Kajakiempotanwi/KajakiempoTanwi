@@ -63,9 +63,35 @@ const Footer = () => (
 
                 <p>kajakiempotanwi@wp.pl</p>
             </Link>
+            <Link to="https://goo.gl/maps/CofMJpjp146mZ2SC7?coh=178572&entry=tt" className="flex-center mb-4">
+                <svg
+                    width="24"
+                    height="24"
+                    className="mr-2"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <g clip-path="url(#clip0_1527_168)">
+                        <path
+                            d="M10.5938 0.093717C9.63751 0.25778 9.03751 0.440592 8.17969 0.834342C7.19532 1.28434 6.40313 1.84215 5.59688 2.64372C3.24376 4.99684 2.41407 8.19372 3.25782 11.6578C3.98438 14.6531 5.90157 17.9156 8.94376 21.3515C9.75469 22.2609 11.3016 23.7843 11.5406 23.8968C11.8125 24.0328 12.1828 24.0328 12.45 23.9062C12.7734 23.7468 14.4469 21.9937 15.6375 20.5547C18.6234 16.9593 20.4609 13.5093 20.9484 10.5937C21.15 9.37966 21.0797 7.86091 20.7656 6.72184C20.325 5.11872 19.5656 3.8109 18.4031 2.64372C16.9875 1.23278 15.3141 0.38903 13.2844 0.074967C12.6234 -0.028158 11.25 -0.018783 10.5938 0.093717ZM13.1859 4.94059C14.7516 5.40934 15.9328 6.71247 16.2188 8.29216C16.2938 8.71872 16.2844 9.47809 16.1953 9.91403C16.1156 10.3031 15.8625 10.95 15.6656 11.2734C15.4266 11.6625 15.0234 12.1125 14.6531 12.4031C12.6328 14.0062 9.70313 13.4765 8.32501 11.264C7.71094 10.275 7.55157 8.82653 7.93126 7.71091C8.30626 6.61872 9.10782 5.70934 10.1484 5.19372C10.7625 4.88434 11.3016 4.78122 12.1172 4.79997C12.6563 4.81403 12.8484 4.83747 13.1859 4.94059Z"
+                            fill="white"
+                        />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_1527_168">
+                            <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <p className="mr-2">Huta Szumy 56, 22-672 Huta Szumy</p>
+            </Link>
             <p className="text-lg font-bold mb-4 ">Media Społecznościowe</p>
             <div className="flex-center space-x-4 mb-6">
-                <Link aria-label="Facebook" to="https://www.facebook.com/kajakiempotanwi">
+                <Link
+                    aria-label="Facebook"
+                    to="https://www.facebook.com/kajakiempotanwi"
+                >
                     <StaticImage
                         quality={100}
                         height={33}
@@ -73,7 +99,10 @@ const Footer = () => (
                         src="../static/facebook.png"
                     />
                 </Link>
-                <Link aria-label="Instagram" to="https://www.instagram.com/kajakiempotanwi/?igshid=ZGUzMzM3NWJiOQ%3D%3D&fbclid=IwAR3KMcH9JdBcMrolmljM264sarvvk8xuibITApf9M6KBNud7tiR7egu0OZg">
+                <Link
+                    aria-label="Instagram"
+                    to="https://www.instagram.com/kajakiempotanwi/?igshid=ZGUzMzM3NWJiOQ%3D%3D&fbclid=IwAR3KMcH9JdBcMrolmljM264sarvvk8xuibITApf9M6KBNud7tiR7egu0OZg"
+                >
                     <StaticImage
                         quality={100}
                         height={33}
@@ -83,7 +112,7 @@ const Footer = () => (
                 </Link>
             </div>
         </div>
-        <div className="bg-[#464646] bg-gradient-to-tr from-[#464646] to-[#363030] w-full text-center py-2 px-4 text-sm">
+        <div className="bg-[#464646] bg-gradient-to-tr from-[#464646] to-[#363030] w-full text-center py-2 px-4 text-[13px]">
             <p>
                 © 2023 - Design by{" "}
                 <Link

@@ -42,10 +42,10 @@ const Home = () => {
                         Wypożycz, odkrywaj, ciesz się
                     </h2>
                 </div>
-                <div className="grid grid-cols-1 gap-4 px-6 md:grid-cols-3 justify-center w-full max-w-screen-xl mx-auto text-center">
+                <div className="grid grid-cols-1 gap-8 px-6 md:grid-cols-3 justify-center w-full max-w-screen-xl mx-auto text-center">
                     <Link
                         to="/"
-                        className="border md:hover:bg-[#dbdfde] bg-[#E2E9E8] pb-5 rounded-lg shadow-lg mx-auto overflow-hidden"
+                        className="border md:hover:bg-[#dbdfde] md:hover:scale-105 transition-transform bg-[#E2E9E8] pb-5 rounded-lg shadow-lg mx-auto overflow-hidden"
                     >
                         <StaticImage
                             quality={100}
@@ -62,7 +62,7 @@ const Home = () => {
                     </Link>
                     <Link
                         to="/"
-                        className="border md:hover:bg-[#dbdfde] bg-[#E2E9E8] pb-5 rounded-lg shadow-lg mx-auto overflow-hidden"
+                        className="border md:hover:bg-[#dbdfde] md:hover:scale-105 transition-transform bg-[#E2E9E8] pb-5 rounded-lg shadow-lg mx-auto overflow-hidden"
                     >
                         <StaticImage
                             quality={100}
@@ -79,7 +79,7 @@ const Home = () => {
                     </Link>
                     <Link
                         to="/"
-                        className="border md:hover:bg-[#dbdfde] bg-[#E2E9E8] pb-5 rounded-lg shadow-lg mx-auto overflow-hidden"
+                        className="border md:hover:bg-[#dbdfde] md:hover:scale-105 transition-all bg-[#E2E9E8] pb-5 rounded-lg shadow-lg mx-auto overflow-hidden"
                     >
                         <StaticImage
                             quality={100}
@@ -122,36 +122,100 @@ const Home = () => {
                             many variations of passages of Lorem Ipsum
                             available, but the majority have suffered
                         </p>
-                        <div className="flex items-center justify-start">
-                            <svg
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                className="mr-2"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <g clip-path="url(#clip0_1465_262)">
-                                    <path
-                                        d="M5 12L10 17L20 7"
-                                        stroke="white"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_1465_262">
-                                        <rect
-                                            width="24"
-                                            height="24"
-                                            fill="white"
+                        <div className="grid grid-cols-2 lg:pr-24 space-y-2">
+                            <div className="flex items-center justify-start">
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    className="mr-2"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <g clip-path="url(#clip0_1465_262)">
+                                        <path
+                                            d="M5 12L10 17L20 7"
+                                            stroke="white"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
                                         />
-                                    </clipPath>
-                                </defs>
-                            </svg>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1465_262">
+                                            <rect
+                                                width="24"
+                                                height="24"
+                                                fill="white"
+                                            />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
 
-                            <p className="font-medium">Ipsum available</p>
+                                <p className="font-medium">Ipsum available</p>
+                            </div>
+                            <div className="flex items-center justify-start">
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    className="mr-2"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <g clip-path="url(#clip0_1465_262)">
+                                        <path
+                                            d="M5 12L10 17L20 7"
+                                            stroke="white"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1465_262">
+                                            <rect
+                                                width="24"
+                                                height="24"
+                                                fill="white"
+                                            />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                                <p className="font-medium">Ipsum available</p>
+                            </div>
+                            <div className="flex items-center justify-start">
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    className="mr-2"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <g clip-path="url(#clip0_1465_262)">
+                                        <path
+                                            d="M5 12L10 17L20 7"
+                                            stroke="white"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1465_262">
+                                            <rect
+                                                width="24"
+                                                height="24"
+                                                fill="white"
+                                            />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                                <p className="font-medium">Ipsum available</p>
+                            </div>
                         </div>
                     </div>
 

@@ -19,10 +19,11 @@
 }
 
 .p_kayak{
-    text-shadow: 0 0 4px #00B0BD;
+    text-shadow: 0 0 1px #00B0BD;
     @apply text-center w-max text-[13px] border-b-2 border-[#005719] text-[#005719] shadow-[#00B0BD] font-bold mx-auto rounded-sm -tracking-wide
 }
 .Link_kayak{
+    text-shadow: 0 0 1px #00B0BD;
     @apply text-center w-max text-sm text-[#005719] font-bold mx-auto rounded-sm 
 }
 
@@ -30,7 +31,10 @@ a{
     @apply transition-colors duration-150
 }
 .btn_main{
-    @apply border-2 border-[#0191AE] bg-[#04AED1] text-white px-6 py-2 rounded-3xl
+    @apply border-2 border-[#0191AE] bg-[#046C65] text-white px-6 py-2 rounded-3xl font-bold
+}
+.btn_main:hover{
+    @apply bg-green-600
 }
 
 
