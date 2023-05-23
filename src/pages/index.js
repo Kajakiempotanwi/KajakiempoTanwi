@@ -3,9 +3,8 @@ import Layout from "../components/layout";
 import Seo from "../components/seo";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
-import ReactPlayer from 'react-player'
-import vv from "../../static/video/vv.mp4"
-
+import ReactPlayer from "react-player";
+import vv from "../../static/video/vv.mp4";
 
 const Home = () => {
     return (
@@ -631,7 +630,19 @@ const Home = () => {
             </section>
 
             <section id="video" className="bg-[#E2E9E8] pt-6 md:py-12">
-                <ReactPlayer autoplay muted controls className="mx-auto w-full h-auto" url={vv} />
+                <ReactPlayer
+                    autoplay
+                    muted
+                    controls
+                    className="mx-auto w-full h-auto"
+                    url={vv}
+                />
+                <p className="mt-12">
+                    There are many variations of passages of Lorem Ipsum
+                    available, but the majority have suffered There are many
+                    variations of passages of Lorem Ipsum available, but the
+                    majority have suffered{" "}
+                </p>
             </section>
         </Layout>
     );
