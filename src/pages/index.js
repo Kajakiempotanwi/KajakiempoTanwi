@@ -217,6 +217,7 @@ const Home = () => {
                                 <p className="font-medium">Ipsum available</p>
                             </div>
                         </div>
+                        <Link to="/kontakt" className="btn_main flex-start w-max mt-12">Kontakt</Link>
                     </div>
 
                     <div></div>

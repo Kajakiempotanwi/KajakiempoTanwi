@@ -31,7 +31,7 @@ a{
     @apply transition-colors duration-150
 }
 .btn_main{
-    @apply border-2 border-[#0191AE] bg-[#046C65] text-white px-6 py-2 rounded-3xl font-bold
+    @apply border-2 border-[#0191AE] bg-[#046C65] text-white px-6 py-2 rounded-3xl font-medium
 }
 .btn_main:hover{
     @apply bg-green-600
