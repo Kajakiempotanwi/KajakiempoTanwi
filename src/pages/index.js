@@ -630,7 +630,7 @@ const Home = () => {
             </section>
 
             <section id="video" className="bg-[#E2E9E8] py-10 md:py-16">
-                <div className="w-96 sm:w-[32] h-auto mx-auto rounded-md overflow-hidden">
+                <div className="w-full px-4 sm:w-[32] h-auto mx-auto rounded-md overflow-hidden">
                     <ReactPlayer
                         muted
                         playing
