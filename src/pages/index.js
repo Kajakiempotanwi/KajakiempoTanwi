@@ -4,13 +4,13 @@ import Seo from "../components/seo";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
-import VideoCom from "../components/videoCom";
-
 import {
     HeroSection,
     CardsSection,
     EtapsSection,
     HappySection,
+    VideoSection,
+    ImgSection,
 } from "../components/HomePage/index";
 
 const Home = () => {
@@ -19,14 +19,13 @@ const Home = () => {
             <HeroSection />
             <CardsSection />
             <EtapsSection />
-            <HappySection /> 
-            <VideoCom />
-
+            <HappySection />
+            <VideoSection />
             <section
                 id="most"
                 className="relative min-h-[20rem] md:min-h-[30rem] text-white"
             >
-                <div className="absolute inset-0 h-full w-full -z-10">
+                <div className="absolute inset-0 h-full w-full min-h-[20rem] -z-10">
                     <StaticImage
                         quality={100}
                         style={{ width: "100%", minHeight: "20rem" }}
@@ -42,15 +41,7 @@ const Home = () => {
                     </Link>
                 </div>
             </section>
-
-            <section className="pt-10 md:py-24">
-                <div className="mb-10">
-                    <p className="p_kayak">KAJAKI PO TANWI</p>
-                    <h2 className="font-bold text-lg lg:text-xl text-gray-700">
-                        Wypożycz, odkrywaj, ciesz się
-                    </h2>
-                </div>
-            </section>
+            <ImgSection />
         </Layout>
     );
 };

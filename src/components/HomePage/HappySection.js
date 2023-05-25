@@ -25,7 +25,7 @@ const HappySection = () => {
                     {title}
                 </h2>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 max-w-screen-md mx-auto text-start  px-5 sm:pl-[12%] lg:pl-[7%]">
+            <div className="grid grid-cols-1 sm:grid-cols-2 max-w-screen-md mx-auto text-start  px-5 sm:pl-[12%] lg:pl-[8%]">
                 {zalety.map((item, id) => (
                     <div key={id} className="flex items-center justify-center sm:justify-start">
                         <div className="flex-center sm:flex-row mt-2">

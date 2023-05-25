@@ -28,10 +28,11 @@ const HeroSection = () => {
             />
             <div className="absolute w-full h-full inset-0 opacity-50 bg-[#00232E]" />
             <div className="absolute w-full left-1/2 top-1/2 px-4 -translate-x-1/2 -translate-y-1/2">
-                <h1 className="uppercase orange_gradient mt-12 text-2xl sm:text-3xl md:text-4xl  lg:text-6xl font-bold">
+                <h2 className="uppercase orange_gradient mt-12 text-2xl sm:text-3xl md:text-4xl  lg:text-6xl font-bold">
                     {title}
-                </h1>
-                <p className="sm:w-1/2 lg:w-1/3 mx-auto mt-5 text-center text-gray-200 mb-6">
+                </h2>
+                <h1 className="mt-5 text-gray-200 -tracking-wide sm:w-1/2 lg:w-1/3 mx-auto">Kajakiem po Tanwi Spływy kajakowe Susiec</h1>
+                <p className="sm:w-1/2 lg:w-1/3 mx-auto text-center text-gray-200 mb-6">
                     {desc}
                 </p>
                 <Link

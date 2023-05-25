@@ -1,8 +1,20 @@
 import React, { useState, useRef } from "react";
+import { graphql, useStaticQuery } from "gatsby";
 import ReactPlayer from "react-player";
-import vv from "../assets/video/vv.mp4";
+import vv from "../../assets/video/vv.mp4";
 
-const VideoCom = () => {
+const VideoSection = () => {
+    const data = useStaticQuery(graphql`
+        query {
+            datoCmsVideo {
+                desc
+            }
+        }
+    `);
+
+    const videoData = data.datoCmsVideo;
+    const { desc } = videoData;
+
     const [isPlaying, setIsPlaying] = useState(false);
     const [isHovered, setIsHovered] = useState(false);
     const [timeoutId, setTimeoutId] = useState(null);
@@ -63,7 +75,7 @@ const VideoCom = () => {
                     {!isPlaying ? (
                         <div
                             style={{
-                                zIndex: "50",
+                                zIndex: "30",
                                 position: "absolute",
                                 top: "50%",
                                 left: "50%",
@@ -114,7 +126,10 @@ const VideoCom = () => {
                                 transform: "translate(-50%, -50%)",
                             }}
                         >
-                            <button className="opacity-0 lg:opacity-100" onClick={handleStop}>
+                            <button
+                                className="opacity-0 lg:opacity-100"
+                                onClick={handleStop}
+                            >
                                 <svg
                                     width="76"
                                     height="75"
@@ -151,20 +166,16 @@ const VideoCom = () => {
                         height="100%"
                         className="mx-auto w-full h-auto rounded-lg"
                         url={vv}
-                        onClick={handlePlayerClick }
+                        onClick={handlePlayerClick}
                     />
-                    <p className="bg-amber-400 text-white text-[12px] font-medium absolute py-1 px-3 rounded-xl -top-2 -translate-x-2 sm:top-12 left-0 sm:-translate-x-1/2">VIDEO</p>
+                    <p className="bg-amber-400 text-white text-[12px] font-medium absolute py-1 px-3 rounded-xl -top-2 -translate-x-2 sm:top-12 left-0 sm:-translate-x-1/2">
+                        VIDEO
+                    </p>
                 </div>
-                <p className="mt-6 sm:pr-12 text-start">
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered There are many
-                    variations of passages of Lorem Ipsum available, but the
-                    majority have suffered of passages of Lorem Ipsum available, but the
-                    majority have suffered
-                </p>
+                <p className="mt-6 sm:pr-12 text-start">{desc}</p>
             </div>
         </section>
     );
 };
 
-export default VideoCom;
+export default VideoSection;

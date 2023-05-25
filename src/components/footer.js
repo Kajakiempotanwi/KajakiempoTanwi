@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -63,7 +63,10 @@ const Footer = () => (
 
                 <p>kajakiempotanwi@wp.pl</p>
             </Link>
-            <Link to="https://goo.gl/maps/CofMJpjp146mZ2SC7?coh=178572&entry=tt" className="flex-center mb-4">
+            <Link
+                to="https://goo.gl/maps/6T3yMfNiEXggfGVi8?coh=178572&entry=tt"
+                className="flex-center mb-4"
+            >
                 <svg
                     width="24"
                     height="24"
@@ -113,6 +116,7 @@ const Footer = () => (
             </div>
         </div>
         <div className="bg-[#464646] bg-gradient-to-tr from-[#464646] to-[#363030] w-full text-center py-2 px-4 text-[13px]">
+            
             <p>
                 © 2023 - Design by{" "}
                 <Link

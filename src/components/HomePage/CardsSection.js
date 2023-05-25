@@ -25,7 +25,7 @@ const CardsSection = () => {
     const cardData = data.datoCmsCard;
     const { title, desc, card } = cardData;
     return (
-        <section id="cards" className="pt-10 md:py-16">
+        <section id="cards" className="pt-10 md:py-16 relative">
             <div className="mb-6">
                 <p className="p_kayak">{title}</p>
                 <h2 className="font-bold text-lg lg:text-xl text-gray-700">
@@ -43,7 +43,11 @@ const CardsSection = () => {
                         <img
                             src={item.img.fluid.src}
                             alt={item.title}
-                            style={{ objectFit: "cover", width: "100%", height: "50%" }} // Dodane style
+                            style={{
+                                objectFit: "cover",
+                                width: "100%",
+                                height: "50%",
+                            }} // Dodane style
                         />
 
                         <h3 className="pb-2 pt-4 px-3 font-bold uppercase">

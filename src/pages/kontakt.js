@@ -3,7 +3,7 @@ import Layout from "../components/layout";
 import Seo from "../components/seo";
 
 
-const SzlakKajakowy = () => {
+const Kontakt = () => {
     return (
         <Layout>
             
@@ -11,6 +11,6 @@ const SzlakKajakowy = () => {
     );
 };
 
-export const Head = () => <Seo title="Szlak Kajakowy" />;
+export const Head = () => <Seo title="Kontakt spływ kajakiem po Tanwi" />;
 
-export default SzlakKajakowy;
+export default Kontakt;
