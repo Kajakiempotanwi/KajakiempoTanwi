@@ -19,7 +19,7 @@
 
 .p_kayak{
     text-shadow: 0 0 1px #00B0BD;
-    @apply text-center w-max text-[13px] border-b-2 border-[#005719] text-[#005719] shadow-[#00B0BD] font-bold mx-auto rounded-sm -tracking-wide
+    @apply text-center w-max text-[13px] border-b-2 border-[#005719] text-[#005719] shadow-[#00B0BD] font-bold mx-auto rounded-sm -tracking-wide uppercase
 }
 .Link_kayak{
     text-shadow: 0 0 1px #00B0BD;

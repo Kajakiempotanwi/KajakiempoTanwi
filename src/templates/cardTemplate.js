@@ -42,13 +42,13 @@ const CardTemplate = ({
                                             {datoCmsCardd.title}
                                         </h1>
                                         <p class="text-gray-700 text-lg mb-4 pb-2">
-                                                {datoCmsCardd.bdesc}
+                                                {datoCmsCardd.desc}
                                         </p>
                                         <p class="text-gray-700 text-lg mb-4 pb-2">
                                             <div
                                                 id="descriptionHtml"
                                                 dangerouslySetInnerHTML={{
-                                                    __html: datoCmsCardd.desc,
+                                                    __html: datoCmsCardd.bdesc,
                                                 }}
                                             />
                                         </p>
@@ -89,7 +89,7 @@ const CardTemplate = ({
                                     <GatsbyImage
                                         className="w-full h-full object-cover object-center absolute inset-0 group-hover:scale-110 transition duration-200"
                                         image={getImage(
-                                            node.img.gatsbyImageData
+                                            node.img
                                         )}
                                         alt={node.title}
                                     />
