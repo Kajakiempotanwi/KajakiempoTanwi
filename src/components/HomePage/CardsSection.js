@@ -1,7 +1,5 @@
 import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
-import { Link } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
+import { graphql, useStaticQuery, Link } from "gatsby";
 
 const CardsSection = () => {
     const data = useStaticQuery(graphql`
@@ -34,79 +32,30 @@ const CardsSection = () => {
                     {desc}
                 </h2>
             </div>
-            <div className="grid grid-cols-1 gap-8 px-6 md:grid-cols-3 justify-center w-full max-w-screen-xl mx-auto text-center">
+            <div className="grid grid-cols-1 gap-12 md:gap-0 px-6 md:grid-cols-3 justify-center w-full max-w-screen-xl mx-auto text-center">
                 {card.map((item, id) => (
                     <Link
                         key={id}
                         to={item.slug}
-                        className="border md:hover:bg-[#dbdfde] md:hover:scale-105 transition-transform bg-[#E2E9E8] pb-5 rounded-lg shadow-lg mx-auto overflow-hidden"
+                        className="border md:hover:bg-[#dbdfde] md:hover:scale-[1.02] md:hover:shadow-xl transition-transform bg-[#E2E9E8] pb-5 rounded-lg shadow-lg mx-auto overflow-hidden"
+                        style={{ width: "300px", height: "300px" }} // Dodane style
                     >
-                        <StaticImage
-                            quality={100}
-                            className="w-full"
-                            src="../assets/cards/k1.jpg"
+                        <img
+                            src={item.img.fluid.src}
+                            alt={item.title}
+                            style={{ objectFit: "cover", width: "100%", height: "50%" }} // Dodane style
                         />
 
-                        <h3 className="py-4 px-3 font-bold uppercase">
+                        <h3 className="pb-2 pt-4 px-3 font-bold uppercase">
                             {item.title}
                         </h3>
-                        <p className="pb-6 px-6">{item.desc}</p>
-                        <p className="py-3 px-3 Link_kayak">ZOBACZ &#8594;</p>
+                        <p className="pb-4 px-6">{item.desc}</p>
+                        <p className="px-3 Link_kayak">ZOBACZ &#8594;</p>
                     </Link>
                 ))}
-
-                {/* <Link
-                    to="/"
-                    className="border md:hover:bg-[#dbdfde] md:hover:scale-105 transition-transform bg-[#E2E9E8] pb-5 rounded-lg shadow-lg mx-auto overflow-hidden"
-                >
-                    <StaticImage
-                        quality={100}
-                        className="w-full"
-                        src="../assets/cards/k1.jpg"
-                    />
-
-                    <h3 className="py-4 px-3 font-bold uppercase">{title}</h3>
-                    <p className="pb-6 px-6">
-                    </p>
-                    <p className="py-3 px-3 Link_kayak">ZOBACZ &#8594;</p>
-                </Link> */}
-                {/* <Link
-                    to="/"
-                    className="border md:hover:bg-[#dbdfde] md:hover:scale-105 transition-transform bg-[#E2E9E8] pb-5 rounded-lg shadow-lg mx-auto overflow-hidden"
-                >
-                    <StaticImage
-                        quality={100}
-                        className="w-full"
-                        src="../assets/cards/k2.jpg"
-                    />
-
-                    <h3 className="py-4 px-3 font-bold">PRZYGODA</h3>
-                    <p className="pb-6 px-6">
-                        have suffered alteration in some form, by injected
-                        humour
-                    </p>
-                    <p className="py-3 px-3 Link_kayak">ZOBACZ &#8594;</p>
-                </Link>
-                <Link
-                    to="/"
-                    className="border md:hover:bg-[#dbdfde] md:hover:scale-105 transition-all bg-[#E2E9E8] pb-5 rounded-lg shadow-lg mx-auto overflow-hidden"
-                >
-                    <StaticImage
-                        quality={100}
-                        className="w-full"
-                        src="../assets/cards/k3.jpg"
-                    />
-
-                    <h3 className="py-4 px-3 font-bold">DLA DZIECI</h3>
-                    <p className="pb-6 px-6">
-                        have suffered alteration in some form, by injected
-                        humour
-                    </p>
-                    <p className="py-3 px-3 Link_kayak">ZOBACZ &#8594;</p>
-                </Link> */}
             </div>
-            <div className="mt-8 mb-8">
-                <Link to="/" className="btn_main">
+            <div className="mt-12 mb-12 md:mt-20 md:mb-6">
+                <Link to="/szlak-kajakowy" className="btn_main">
                     Zobacz Trasy
                 </Link>
             </div>
