@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import ReactPlayer from "react-player";
-import vv from "../../static/video/vv.mp4";
+import vv from "../assets/video/vv.mp4";
 
 const VideoCom = () => {
     const [isPlaying, setIsPlaying] = useState(false);

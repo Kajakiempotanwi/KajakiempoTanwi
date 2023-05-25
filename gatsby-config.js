@@ -18,7 +18,7 @@ module.exports = {
         {
             resolve: `gatsby-source-datocms`,
             options: {
-                apiToken: `b7034332f28b2c0211b44f84c07c74`,
+                apiToken: `351f1338e7af25eda125e539bff08c`,
                 environment: `main`,
                 previewMode: false,
                 disableLiveReload: false,
@@ -58,7 +58,7 @@ module.exports = {
                 defaults: {
                     formats: [`auto`, `webp`],
                     placeholder: `dominantColor`,
-                    quality: 50,
+                    quality: 60,
                     breakpoints: [750, 1080, 1366, 1920],
                     backgroundColor: `transparent`,
                     blurredOptions: {},

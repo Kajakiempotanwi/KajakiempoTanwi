@@ -9,7 +9,7 @@ const Footer = () => (
             height={75}
             width={75}
             className=" -mt-10"
-            src="../../static/logoWhite.png"
+            src="../assets/logoWhite.png"
         />
         <div className="flex-center flex-col">
             <p className="text-lg font-bold mb-4">Kontakt</p>
@@ -96,7 +96,7 @@ const Footer = () => (
                         quality={100}
                         height={33}
                         width={33}
-                        src="../../static/facebook.png"
+                        src="../assets/facebook.png"
                     />
                 </Link>
                 <Link
@@ -107,7 +107,7 @@ const Footer = () => (
                         quality={100}
                         height={33}
                         width={33}
-                        src="../../static/instagram.png"
+                        src="../assets/instagram.png"
                     />
                 </Link>
             </div>

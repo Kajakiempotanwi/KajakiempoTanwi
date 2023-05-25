@@ -62,7 +62,7 @@ export default function Nav() {
                                 loading="eager"
                                 placeholder="blurred"
                                 alt="Kajaki Po Tanwi Logo"
-                                src="../../static/lt.png"
+                                src="../assets/lt.png"
                             />
                         </div>
                         <p
