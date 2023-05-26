@@ -17,25 +17,90 @@
     }
 }
 
-.p_kayak{
-    text-shadow: 0 0 1px #00B0BD;
-    @apply text-center w-max text-[13px] border-b-2 border-[#005719] text-[#005719] shadow-[#00B0BD] font-bold mx-auto rounded-sm -tracking-wide uppercase
-}
-.Link_kayak{
-    text-shadow: 0 0 1px #00B0BD;
-    @apply text-center w-max text-sm text-[#005719] font-bold mx-auto rounded-sm 
-}
-
-a{
-    @apply transition-colors duration-150
-}
-.btn_main{
-    @apply border-2 border-[#0191AE] bg-[#046C65] text-white px-6 py-2 rounded-3xl font-medium
-}
-.btn_main:hover{
-    @apply bg-green-600
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 99999;
+}
+
+.modal-image {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 99999;
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
+
+.p_kayak {
+    text-shadow: 0 0 1px #00b0bd;
+    @apply text-center w-max text-[13px] border-b-2 border-[#005719] text-[#005719] shadow-[#00B0BD] font-bold mx-auto rounded-sm -tracking-wide uppercase;
+}
+.Link_kayak {
+    text-shadow: 0 0 1px #00b0bd;
+    @apply text-center w-max text-sm text-[#005719] font-bold mx-auto rounded-sm;
+}
+
+a {
+    @apply transition-colors duration-150;
+}
+.btn_main {
+    @apply border-2 border-[#0191AE] bg-[#046C65] text-white px-6 py-2 rounded-3xl font-medium;
+}
+.btn_main:hover {
+    @apply bg-green-600;
+}
 
 /* Tailwind Styles */
 
