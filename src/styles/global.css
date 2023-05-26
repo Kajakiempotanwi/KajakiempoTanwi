@@ -106,24 +106,8 @@ a {
     @apply bg-green-600;
 }
 
-/* Tailwind Styles */
-
 .orange_gradient {
     @apply bg-gradient-to-r from-amber-500 font-bold via-orange-600 to-yellow-500 bg-clip-text text-transparent;
-}
-.green_gradient {
-    @apply bg-gradient-to-r from-green-400 font-bold to-green-500 bg-clip-text text-transparent;
-}
-.blue_gradient {
-    @apply bg-gradient-to-r from-blue-600 font-bold to-cyan-600 bg-clip-text text-transparent;
-}
-.desc {
-    @apply mt-5 text-lg text-gray-600 font-bold sm:text-xl max-w-2xl;
-}
-
-/* Nav Component */
-.dropdown {
-    @apply absolute right-0 top-full mt-3 w-full p-5 rounded-lg bg-white min-w-[210px] flex flex-col gap-2 justify-end items-end;
 }
 
 .flex-center {

@@ -4,6 +4,7 @@ import EtapsSection from "./EtapsSection";
 import HappySection from "./HappySection";
 import VideoSection from "./VideoSection";
 import ImgSection from "./ImgSection";
+import OpinieSection from "./OpinieSection"
 
 
 
@@ -14,4 +15,5 @@ export {
     HappySection,
     VideoSection,
     ImgSection,
+    OpinieSection,
 };

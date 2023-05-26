@@ -14,7 +14,6 @@ const ImgSection = () => {
                         }
                     }
                     desc
-                    title
                 }
             }
         }
@@ -38,7 +37,7 @@ const ImgSection = () => {
                     >
                         <img
                             src={item.img.fluid.src}
-                            alt={item.title}
+                            alt="spływ kajaki"
                             style={{
                                 borderRadius:"10px",
                                 objectFit: "cover",

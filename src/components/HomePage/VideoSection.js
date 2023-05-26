@@ -16,12 +16,14 @@ const VideoSection = () => {
     const { desc } = videoData;
 
     const [isPlaying, setIsPlaying] = useState(false);
+    const [isControls, setIsControls] = useState(false);
     const [isHovered, setIsHovered] = useState(false);
     const [timeoutId, setTimeoutId] = useState(null);
     const playerRef = useRef(null);
 
     const handlePlay = () => {
         setIsPlaying(true);
+        setIsControls(true)
     };
 
     const handleMouseEnter = () => {
@@ -37,13 +39,16 @@ const VideoSection = () => {
     const handlePlayerClick = () => {
         if (isPlaying) {
             setIsPlaying(false);
+            setIsControls(false)
         } else {
             setIsPlaying(false);
+            setIsControls(false)
         }
     };
 
     const handleStop = () => {
         setIsPlaying(false);
+        setIsControls(false)
     };
 
     const startTimeout = () => {
@@ -160,6 +165,7 @@ const VideoSection = () => {
                         ref={playerRef}
                         muted
                         loop
+                        controls={isControls}
                         playing={isPlaying}
                         playIcon={false}
                         width="100%"

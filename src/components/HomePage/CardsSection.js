@@ -37,8 +37,7 @@ const CardsSection = () => {
                     <Link
                         key={id}
                         to={item.slug}
-                        className="border md:hover:bg-[#dbdfde] md:hover:scale-[1.02] md:hover:shadow-xl transition-transform bg-[#E2E9E8] pb-5 rounded-lg shadow-lg mx-auto overflow-hidden"
-                        style={{ width: "300px", height: "300px" }} // Dodane style
+                        className="border md:hover:bg-[#dbdfde] md:hover:scale-[1.02] md:hover:shadow-xl transition-transform bg-[#E2E9E8] pb-5 rounded-lg shadow-lg mx-auto overflow-hidden w-[90%] h-[300px]"
                     >
                         <img
                             src={item.img.fluid.src}
