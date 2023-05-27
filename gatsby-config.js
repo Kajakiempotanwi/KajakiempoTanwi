@@ -57,7 +57,6 @@ module.exports = {
             options: {
                 defaults: {
                     formats: [`auto`, `webp`],
-                    placeholder: `dominantColor`,
                     quality: 60,
                     breakpoints: [650, 1080, 1500],
                 },
