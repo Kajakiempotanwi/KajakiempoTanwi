@@ -7,7 +7,7 @@ module.exports = {
     siteMetadata: {
         title: `Spływy Kajakowe`,
         description: `Spływy kajakowe Kajakami po Tanwi`,
-        author: `Seovileo`,
+        author: `Seovileo`, 
         siteUrl: `https://seovileo.pl/`,
     },
     plugins: [
@@ -57,7 +57,7 @@ module.exports = {
             options: {
                 defaults: {
                     formats: [`auto`, `webp`],
-                    quality: 60,
+                    quality: 90,
                     breakpoints: [650, 1080, 1500],
                 },
             },
