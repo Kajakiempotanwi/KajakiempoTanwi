@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 import TopImg from "../components/topImg";
@@ -6,6 +6,8 @@ import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 
 const SzlakKajakowy = () => {
+    const [showMap, setMap] = useState(false);
+    const handleMap = () => setMap(true);
     return (
         <Layout>
             <TopImg />
@@ -155,16 +157,25 @@ const SzlakKajakowy = () => {
                                 majority have suffered alteration in some form,
                                 by injected humour, or randomised words
                             </p>
-                            <iframe
-                                title="mapa 3d kajakiem po tanwi"
-                                src="https://www.google.com/maps/embed?pb=!4v1685110045784!6m8!1m7!1sIr6pXzsXk_PFO5IC_0r6AA!2m2!1d50.39376715238909!2d23.20725231533712!3f241.48075538551154!4f-5.7408150949017624!5f0.7820865974627469"
-                                width="600"
-                                height="450"
-                                style={{ border: 0, margin: "20px 0" }}
-                                allowfullscreen=""
-                                loading="eager"
-                                referrerpolicy="no-referrer-when-downgrade"
-                            ></iframe>
+                            <div className="relative lg:mx-4">
+                                <div className={!showMap?"absolute inset-0 bg-green-900/40 w-full h-full flex-center text-center":"hidden"}>
+                                    <button aria-label="włacz mape" title="włacz mape" onClick={handleMap}>
+                                        <p className="text-white font-medium bg-black/60 py-8 px-4 rounded-full text-sm">
+                                            Zobacz <br /> Street View
+                                        </p>
+                                    </button>
+                                </div>
+                                <iframe
+                                    title="mapa 3d kajakiem po tanwi"
+                                    src="https://www.google.com/maps/embed?pb=!4v1685110045784!6m8!1m7!1sIr6pXzsXk_PFO5IC_0r6AA!2m2!1d50.39376715238909!2d23.20725231533712!3f241.48075538551154!4f-5.7408150949017624!5f0.7820865974627469"
+
+                                    style={{ border: 0, margin: "20px 0",width:"100%", height:"100%" }}
+                                    allowfullscreen=""
+                                    loading="eager"
+                                    referrerpolicy="no-referrer-when-downgrade"
+                                ></iframe>
+                            </div>
+
                             <p className="px-4">
                                 There are many variations of passages of Lorem
                                 Ipsum available, but the majority have suffered

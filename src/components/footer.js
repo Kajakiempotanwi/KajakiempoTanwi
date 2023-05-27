@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
 const Footer = () => (
-    <footer className="flex-center mt-24 flex-col bg-[#262626] w-full text-white relative space-y-3">
+    <footer className="flex-center flex-col bg-[#262626] w-full text-white relative space-y-3">
         <StaticImage
             quality={100}
             height={75}

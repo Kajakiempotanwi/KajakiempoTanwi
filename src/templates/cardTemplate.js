@@ -60,7 +60,7 @@ const CardTemplate = ({
                                             data-mdb-ripple="true"
                                             data-mdb-ripple-color="light"
                                         >
-                                            Trasy
+                                            Trasa
                                         </Link>
 
                                         <Link
