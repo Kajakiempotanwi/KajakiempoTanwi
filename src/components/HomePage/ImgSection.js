@@ -1,17 +1,20 @@
 import React from "react";
 import { graphql, useStaticQuery, Link } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const ImgSection = () => {
     const data = useStaticQuery(graphql`
-        query {
+        {
             datoCmsImg {
                 stitle
                 title
                 imgdesc {
                     img {
-                        fluid {
-                            src
-                        }
+                        gatsbyImageData(
+                            breakpoints: [400]
+                            width: 500
+                            outputPixelDensities: 3
+                        )
                     }
                     desc
                 }
@@ -35,15 +38,15 @@ const ImgSection = () => {
                         key={id}
                         className="transition-transform h-max pb-2 rounded-lg mx-auto overflow-hidden"
                     >
-                        <img
-                            src={item.img.fluid.src}
-                            alt="spływ kajaki"
+                        <GatsbyImage
                             style={{
-                                borderRadius:"10px",
+                                borderRadius: "10px",
                                 objectFit: "cover",
                                 width: "100%",
                                 height: "50%",
                             }}
+                            image={getImage(item.img)}
+                            alt="spływ kajaki"
                         />
 
                         <div className="text-start py-2 px-4">

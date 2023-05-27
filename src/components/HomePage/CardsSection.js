@@ -1,9 +1,10 @@
 import React from "react";
 import { graphql, useStaticQuery, Link } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const CardsSection = () => {
     const data = useStaticQuery(graphql`
-        query {
+        {
             datoCmsCard {
                 desc
                 title
@@ -12,9 +13,7 @@ const CardsSection = () => {
                     slug
                     title
                     img {
-                        fluid {
-                            src
-                        }
+                        gatsbyImageData(breakpoints: [400])
                     }
                     id
                 }
@@ -39,14 +38,15 @@ const CardsSection = () => {
                         to={item.slug}
                         className="border md:hover:bg-[#dbdfde] md:hover:scale-[1.02] md:hover:shadow-xl transition-transform bg-[#E2E9E8] pb-5 rounded-lg shadow-lg mx-auto overflow-hidden w-[90%] h-[300px]"
                     >
-                        <img
-                            src={item.img.fluid.src}
-                            alt={item.title}
+                        <GatsbyImage
                             style={{
                                 objectFit: "cover",
                                 width: "100%",
                                 height: "50%",
-                            }} // Dodane style
+                            }}
+                            loading="eager"
+                            image={getImage(item.img)}
+                            alt={item.title}
                         />
 
                         <h3 className="pb-2 pt-4 px-3 font-bold uppercase">
@@ -59,7 +59,7 @@ const CardsSection = () => {
             </div>
             <div className="mt-12 mb-12 md:mt-20 md:mb-6">
                 <Link to="/szlak-kajakowy" className="btn_main">
-                    Zobacz Trasy
+                    Zobacz Trase
                 </Link>
             </div>
         </section>

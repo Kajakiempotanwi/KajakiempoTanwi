@@ -23,7 +23,7 @@ const EtapsSection = () => {
     const { cdesc, ctitle, desc, title, stitle, happy } = etapsData;
     return (
         <section id="etaps" className=" relative py-20">
-            <div className=" absolute inset-0 -z-20 w-full h-full">
+            <div className="absolute inset-0 -z-20 w-full h-full bg-fixed">
                 <StaticImage
                     quality={100}
                     layout="constrained"
@@ -33,6 +33,7 @@ const EtapsSection = () => {
                     src="../../assets/etaps.jpg"
                 />
             </div>
+
             <div className="absolute inset-0 bg-black opacity-50 -z-10" />
             <div className="grid md:grid-cols-2 max-w-screen-xl mx-auto px-6 text-white">
                 <div>
@@ -41,7 +42,10 @@ const EtapsSection = () => {
                     </p>
                     <div className="grid grid-cols-2 lg:pr-24 space-y-2">
                         {happy.map((item, id) => (
-                            <div key={id} className="flex items-center justify-start">
+                            <div
+                                key={id}
+                                className="flex items-center justify-start"
+                            >
                                 <svg
                                     width="24"
                                     height="24"
@@ -96,9 +100,7 @@ const EtapsSection = () => {
                         <p className="bg-gradient-to-br from-amber-500 to-orange-500 w-full py-3 text-white font-medium">
                             {ctitle}
                         </p>
-                        <p className="p-4">
-                            {cdesc}
-                        </p>
+                        <p className="p-4">{cdesc}</p>
                     </div>
                     <div className="relative mt-12">
                         <div className="relative bg-gradient-to-br from-amber-500 to-orange-500 w-[80vw] md:w-80 h-2 rounded-3xl">

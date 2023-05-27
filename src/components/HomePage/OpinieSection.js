@@ -1,18 +1,22 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const OpinieSection = () => {
     const data = useStaticQuery(graphql`
-        query {
+        {
             datoCmsOpinie {
                 stitle
                 title
                 opinie {
                     desc
                     img {
-                        fluid {
-                            src
-                        }
+                        gatsbyImageData(
+                            height: 50
+                            width: 50
+                            outputPixelDensities: 1.5
+                            placeholder: BLURRED
+                        )
                     }
                     id
                 }
@@ -37,9 +41,7 @@ const OpinieSection = () => {
                         className="transition-transform border p-8 h-max pb-2 rounded-lg mx-auto overflow-hidden"
                     >
                         <div className="flex items-center justify-start">
-                            <img
-                                src={item.img.fluid.src}
-                                alt="opinie kajaki"
+                            <GatsbyImage
                                 style={{
                                     marginRight: "5px",
                                     borderRadius: "10px",
@@ -47,6 +49,8 @@ const OpinieSection = () => {
                                     width: "50px",
                                     height: "50px",
                                 }}
+                                image={getImage(item.img)}
+                                alt="opinie kajaki"
                             />
                             <div className="flex-center">
                                 <svg

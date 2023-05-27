@@ -11,14 +11,10 @@ const Galeria = () => {
                     node {
                         img {
                             gatsbyImageData(
-                                outputPixelDensities: 1.5
-                                placeholder: TRACED_SVG
-                                breakpoints: [650, 1080, 1366, 1620]
+                                width: 800
+                                breakpoints: [200, 400, 600, 800]
+                                placeholder: BLURRED
                                 layout: CONSTRAINED
-                                forceBlurhash: false
-                                aspectRatio: 0.7
-                                width: 600
-                                height: 600
                             )
                         }
                     }
@@ -30,7 +26,7 @@ const Galeria = () => {
     const [selectedImage, setSelectedImage] = useState("");
     const [galleryImages] = useState(
         data.allDatoCmsGaleriaa.edges.map(
-            ({ node }) => node.img.gatsbyImageData
+            ({ node }) => node.img
         )
     );
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -77,7 +73,7 @@ const Galeria = () => {
                                     <button
                                         className="block relative h-56 w-72 md:h-52 md:w-60 rounded overflow-hidden mx-auto"
                                         onClick={() =>
-                                            openModal(node.img.gatsbyImageData)
+                                            openModal(node.img)
                                         }
                                     >
                                         <GatsbyImage

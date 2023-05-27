@@ -23,7 +23,7 @@ const SzlakKajakowy = () => {
                         src="../assets/mapaszlak.jpg"
                     />
                     <p className="text-sm text-start font-medium px-2 text-[#1A6873]">
-                        Trasa Paary - Huta Szumy
+                        Trasa: Paary - Huta Szumy
                     </p>
 
                     <div className="flex flex-col md:flex-row mt-4 md:mt-10 text-start">
@@ -64,7 +64,6 @@ const SzlakKajakowy = () => {
                                 <p className="font-bold">2 godziny</p>
                             </div>
 
-                           
                             <div className="flex items-center justify-start ml-1 my-2">
                                 <svg
                                     className="mr-3"
@@ -85,7 +84,7 @@ const SzlakKajakowy = () => {
 
                             <div className="flex items-center justify-start ml-1">
                                 <svg
-                                className="mr-2"
+                                    className="mr-2"
                                     width="30"
                                     height="30"
                                     viewBox="0 0 30 30"
@@ -157,6 +156,7 @@ const SzlakKajakowy = () => {
                                 by injected humour, or randomised words
                             </p>
                             <iframe
+                                title="mapa 3d kajakiem po tanwi"
                                 src="https://www.google.com/maps/embed?pb=!4v1685110045784!6m8!1m7!1sIr6pXzsXk_PFO5IC_0r6AA!2m2!1d50.39376715238909!2d23.20725231533712!3f241.48075538551154!4f-5.7408150949017624!5f0.7820865974627469"
                                 width="600"
                                 height="450"
@@ -209,6 +209,7 @@ const SzlakKajakowy = () => {
                         <p className="font-bold text-xl text-[#4B4B4B]">
                             Aktualności:
                         </p>
+                        <iframe src="https://www.facebook.com/kajakiempotanwi"></iframe>
                     </div>
                 </div>
             </div>
