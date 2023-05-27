@@ -115,7 +115,7 @@ const Footer = () => (
                 </Link>
             </div>
         </div>
-        <div className="bg-gradient-to-tr from-[#531b1b] to-[#363030] w-full text-center py-2 px-4 text-[13px]">
+        <div className="bg-[#0B5A60] w-full text-center py-2 px-4 text-[13px]">
             
             <p>
                 © 2023 - Design by{" "}

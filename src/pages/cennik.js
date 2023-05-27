@@ -24,6 +24,8 @@ const Cennik = () => {
                         <p>80zł/dzień</p>
                     </div>
                     <StaticImage
+                    durationFadeIn={600}
+                    alt="kajak"
                         quality={100}
                         className="w-full object-contain"
                         src="../assets/kajak.jpg"
@@ -75,6 +77,8 @@ const Cennik = () => {
                                 to="https://www.facebook.com/kajakiempotanwi"
                             >
                                 <StaticImage
+                                durationFadeIn={600}
+                                alt="facebook"
                                     quality={100}
                                     height={33}
                                     width={33}
@@ -86,6 +90,8 @@ const Cennik = () => {
                                 to="https://www.instagram.com/kajakiempotanwi/?igshid=ZGUzMzM3NWJiOQ%3D%3D&fbclid=IwAR3KMcH9JdBcMrolmljM264sarvvk8xuibITApf9M6KBNud7tiR7egu0OZg"
                             >
                                 <StaticImage
+                                durationFadeIn={600}
+                                alt="instagram"
                                     quality={100}
                                     height={33}
                                     width={33}

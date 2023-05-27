@@ -133,9 +133,11 @@ const Kontakt = () => {
                                     to="https://www.facebook.com/kajakiempotanwi"
                                 >
                                     <StaticImage
+                                    alt="facebook"
                                         quality={100}
                                         height={33}
                                         width={33}
+                                        durationFadeIn={600}
                                         src="../assets/facebook.png"
                                     />
                                 </Link>
@@ -144,8 +146,10 @@ const Kontakt = () => {
                                     to="https://www.instagram.com/kajakiempotanwi/?igshid=ZGUzMzM3NWJiOQ%3D%3D&fbclid=IwAR3KMcH9JdBcMrolmljM264sarvvk8xuibITApf9M6KBNud7tiR7egu0OZg"
                                 >
                                     <StaticImage
+                                    alt="instagram"
                                         quality={100}
                                         height={33}
+                                        durationFadeIn={600}
                                         width={33}
                                         src="../assets/instagram.png"
                                     />

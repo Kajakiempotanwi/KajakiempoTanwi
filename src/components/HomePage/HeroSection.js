@@ -21,6 +21,7 @@ const HeroSection = () => {
             <StaticImage
                 quality={100}
                 layout="constrained"
+                durationFadeIn={600}
                 loading="eager"
                 className="w-full h-full min-h-[23rem]"
                 alt="Kajaki Po Tanwi"

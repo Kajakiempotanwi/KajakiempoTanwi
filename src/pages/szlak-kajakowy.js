@@ -20,9 +20,11 @@ const SzlakKajakowy = () => {
             <div className="flex flex-col md:flex-row mx-auto max-w-screen-2xl">
                 <div className="w-full lg:w-4/6 md:mx-10 lg:mx-24 rounded-lg">
                     <StaticImage
+                    durationFadeIn={600}
                         quality={100}
                         className="w-full object-contain"
                         src="../assets/mapaszlak.jpg"
+                        alt="mapa trasy kajakami"
                     />
                     <p className="text-sm text-start font-medium px-2 text-[#1A6873]">
                         Trasa: Paary - Huta Szumy 7km
@@ -205,7 +207,9 @@ const SzlakKajakowy = () => {
                                 to="https://www.facebook.com/kajakiempotanwi"
                             >
                                 <StaticImage
+                                alt="facebook"
                                     quality={100}
+                                    durationFadeIn={600}
                                     height={33}
                                     width={33}
                                     src="../assets/facebook.png"
@@ -216,7 +220,9 @@ const SzlakKajakowy = () => {
                                 to="https://www.instagram.com/kajakiempotanwi/?igshid=ZGUzMzM3NWJiOQ%3D%3D&fbclid=IwAR3KMcH9JdBcMrolmljM264sarvvk8xuibITApf9M6KBNud7tiR7egu0OZg"
                             >
                                 <StaticImage
+                                alt="instagram"
                                     quality={100}
+                                    durationFadeIn={600}
                                     height={33}
                                     width={33}
                                     src="../assets/instagram.png"
