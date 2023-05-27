@@ -11,7 +11,7 @@ const Galeria = () => {
                     node {
                         img {
                             gatsbyImageData(
-                                width: 800
+                                width: 700
                                 breakpoints: [200, 400, 600, 800]
                                 placeholder: BLURRED
                                 layout: CONSTRAINED
