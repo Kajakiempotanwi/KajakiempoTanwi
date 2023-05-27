@@ -23,7 +23,7 @@ const VideoSection = () => {
 
     const handlePlay = () => {
         setIsPlaying(true);
-        setIsControls(true)
+        setIsControls(true);
     };
 
     const handleMouseEnter = () => {
@@ -39,16 +39,16 @@ const VideoSection = () => {
     const handlePlayerClick = () => {
         if (isPlaying) {
             setIsPlaying(false);
-            setIsControls(false)
+            setIsControls(false);
         } else {
             setIsPlaying(false);
-            setIsControls(false)
+            setIsControls(false);
         }
     };
 
     const handleStop = () => {
         setIsPlaying(false);
-        setIsControls(false)
+        setIsControls(false);
     };
 
     const startTimeout = () => {
@@ -87,7 +87,11 @@ const VideoSection = () => {
                                 transform: "translate(-50%, -50%)",
                             }}
                         >
-                            <button onClick={handlePlay}>
+                            <button
+                                title="start przycisk"
+                                aria-label="start"
+                                onClick={handlePlay}
+                            >
                                 <svg
                                     width="76"
                                     height="75"
@@ -132,6 +136,8 @@ const VideoSection = () => {
                             }}
                         >
                             <button
+                                title="stop przycisk"
+                                aria-label="stop"
                                 className="opacity-0 lg:opacity-100"
                                 onClick={handleStop}
                             >
@@ -174,7 +180,7 @@ const VideoSection = () => {
                         url={vv}
                         onClick={handlePlayerClick}
                     />
-                    <p className="bg-amber-400 text-white text-[12px] font-medium absolute py-1 px-3 rounded-xl -top-2 z-20 -translate-x-2 sm:top-12 left-0 sm:-translate-x-1/2">
+                    <p className="bg-red-600 text-white text-[12px] font-medium absolute py-1 px-3 rounded-xl -top-2 z-20 -translate-x-2 sm:top-12 left-0 sm:-translate-x-1/2">
                         VIDEO
                     </p>
                 </div>

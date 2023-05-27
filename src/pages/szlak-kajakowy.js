@@ -18,17 +18,17 @@ const SzlakKajakowy = () => {
                 </h2>
             </div>
             <div className="flex flex-col md:flex-row mx-auto max-w-screen-2xl">
-                <div className="w-full lg:w-4/6 md:mx-10 rounded-lg">
+                <div className="w-full lg:w-4/6 md:mx-10 lg:mx-24 rounded-lg">
                     <StaticImage
                         quality={100}
                         className="w-full object-contain"
                         src="../assets/mapaszlak.jpg"
                     />
                     <p className="text-sm text-start font-medium px-2 text-[#1A6873]">
-                        Trasa: Paary - Huta Szumy
+                        Trasa: Paary - Huta Szumy 7km
                     </p>
 
-                    <div className="flex flex-col md:flex-row mt-4 md:mt-10 text-start">
+                    <div className="flex flex-col md:flex-row mt-4 md:my-10 text-start">
                         <div className="w-full lg:w-2/6 rounded-lg mb-6 px-4">
                             <div className="flex items-center justify-start">
                                 <svg
@@ -63,7 +63,7 @@ const SzlakKajakowy = () => {
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <p className="font-bold">2 godziny</p>
+                                <p className="font-bold">2,5 godziny</p>
                             </div>
 
                             <div className="flex items-center justify-start ml-1 my-2">
@@ -135,41 +135,49 @@ const SzlakKajakowy = () => {
                         </div>
                         <div className="w-full lg:w-4/6 rounded-lg ">
                             <p className="px-4">
-                                There are many variations of passages of Lorem
-                                Ipsum available, but the majority have suffered
-                                alteration in some form, by injected humour, or
-                                randomised words There are many variations of
-                                passages of Lorem Ipsum available, but the
-                                majority have suffered alteration in some form,
-                                by injected humour, or randomised wordsThere are
-                                many variations of passages of Lorem Ipsum
-                                available, but the majority have suffered
-                                alteration in some form, by injected humour, or
-                                randomised words There are many variations of
-                                passages of Lorem Ipsum available, but the
-                                majority have suffered alteration in some form,
-                                by injected humour, or randomised words There
-                                are many variations of passages of Lorem Ipsum
-                                available, but the majority have suffered
-                                alteration in some form, by injected humour, or
-                                randomised wordsThere are many variations of
-                                passages of Lorem Ipsum available, but the
-                                majority have suffered alteration in some form,
-                                by injected humour, or randomised words
+                                Proponowana przez naszą
+                                firmę trasa Paary - Huta Szumy jest uznanawana
+                                za jeden z najpiękniejszych odcinków na
+                                Roztoczu. Rzeka Tanew na tym odcinku, że względu
+                                na górski charakter, wyróżnia się dużą ilością
+                                zakrętów, powalonych drzew oraz głębokością nie
+                                przekraczającą 1m. Trasa w większości prowadzi
+                                przez las z dala od ulic co zapewnia ciszę i
+                                spokój a także przy odrobinie szczęścia pozwala
+                                zaobserwować zwierzęta takie jak bobry w
+                                naturalnym środowisku.
+                            </p>
+                            <p className="px-4 text-lg font-medium my-5">
+                                Miejsce Zbiórki:
                             </p>
                             <div className="relative lg:mx-4">
-                                <div className={!showMap?"absolute inset-0 bg-green-900/40 w-full h-full flex-center text-center":"hidden"}>
-                                    <button aria-label="włacz mape" title="włacz mape" onClick={handleMap}>
+                                <div
+                                    className={
+                                        !showMap
+                                            ? "absolute inset-0 bg-green-900/40 w-full h-full flex-center text-center"
+                                            : "hidden"
+                                    }
+                                >
+                                    <button
+                                        aria-label="włacz mape"
+                                        title="włacz mape"
+                                        onClick={handleMap}
+                                    >
                                         <p className="text-white font-medium bg-black/60 py-8 px-4 rounded-full text-sm">
                                             Zobacz <br /> Street View
                                         </p>
                                     </button>
                                 </div>
+
                                 <iframe
                                     title="mapa 3d kajakiem po tanwi"
                                     src="https://www.google.com/maps/embed?pb=!4v1685110045784!6m8!1m7!1sIr6pXzsXk_PFO5IC_0r6AA!2m2!1d50.39376715238909!2d23.20725231533712!3f241.48075538551154!4f-5.7408150949017624!5f0.7820865974627469"
-
-                                    style={{ border: 0, margin: "20px 0",width:"100%", height:"100%" }}
+                                    style={{
+                                        border: 0,
+                                        margin: "30px 0",
+                                        width: "100%",
+                                        height: "300px",
+                                    }}
                                     allowfullscreen=""
                                     loading="eager"
                                     referrerpolicy="no-referrer-when-downgrade"
@@ -177,16 +185,16 @@ const SzlakKajakowy = () => {
                             </div>
 
                             <p className="px-4">
-                                There are many variations of passages of Lorem
-                                Ipsum available, but the majority have suffered
-                                There are many variations of passages of Lorem
-                                Ipsum available, but the majority have suffered{" "}
+                                Dołącz do naszej wycieczki po trasie Paary -
+                                Huta Szumy i odkryj piękno natury w wyjątkowy
+                                sposób. Nie zwlekaj, zarezerwuj miejsce już dziś
+                                i dołącz do naszego zespołu
                             </p>
                         </div>
                     </div>
                 </div>
 
-                <div className="w-full lg:w-2/6 md:mx-10 my-6 lg:my-0 text-start px-2">
+                <div className="w-full lg:w-2/6 md:mx-10 my-10 lg:my-0 text-start px-4">
                     <div className="border p-5 rounded-lg mb-6">
                         <p className="font-bold text-xl text-[#4B4B4B]">
                             Dołacz do nas:
@@ -216,11 +224,11 @@ const SzlakKajakowy = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className="border p-4 rounded-lg">
+                    <div className="border p-4 rounded-lg bg-yellow-100">
                         <p className="font-bold text-xl text-[#4B4B4B]">
-                            Aktualności:
+                            Obsługujemy klientów indywidualnych jak i grupy
+                            zorganizowane
                         </p>
-                        <iframe src="https://www.facebook.com/kajakiempotanwi"></iframe>
                     </div>
                 </div>
             </div>
