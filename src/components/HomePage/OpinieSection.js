@@ -51,6 +51,7 @@ const OpinieSection = () => {
                                 }}
                                 image={getImage(item.img)}
                                 alt="opinie kajaki"
+                                title="opinie kajaki"
                             />
                             <div className="flex-center">
                                 <svg

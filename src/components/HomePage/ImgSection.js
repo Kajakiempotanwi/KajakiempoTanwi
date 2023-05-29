@@ -47,6 +47,7 @@ const ImgSection = () => {
                             }}
                             image={getImage(item.img)}
                             alt="spływ kajaki"
+                            title="spływ kajaki"
                         />
 
                         <div className="text-start py-2 px-4">

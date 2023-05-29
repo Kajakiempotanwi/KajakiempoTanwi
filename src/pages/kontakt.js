@@ -134,6 +134,7 @@ const Kontakt = () => {
                                 >
                                     <StaticImage
                                     alt="facebook"
+                                    title="facebook"
                                         quality={100}
                                         height={33}
                                         width={33}
@@ -147,6 +148,7 @@ const Kontakt = () => {
                                 >
                                     <StaticImage
                                     alt="instagram"
+                                    title="instagram"
                                         quality={100}
                                         height={33}
                                         durationFadeIn={600}
@@ -163,6 +165,6 @@ const Kontakt = () => {
     );
 };
 
-export const Head = () => <Seo title="Kontakt spływ kajakiem po Tanwi" />;
+export const Head = () => <Seo title="Kontakt" />;
 
 export default Kontakt;

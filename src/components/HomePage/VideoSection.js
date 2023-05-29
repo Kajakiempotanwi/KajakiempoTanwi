@@ -63,7 +63,7 @@ const VideoSection = () => {
                 <div
                     role="button"
                     tabIndex={0}
-                    className="relative"
+                    className="relative h-max"
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
                     onKeyDown={(e) => {
@@ -74,7 +74,7 @@ const VideoSection = () => {
                     style={{
                         position: "relative",
                         width: "100%",
-                        height: "100%",
+                        height: "max-content",
                     }}
                 >
                     {!isPlaying ? (
@@ -179,6 +179,7 @@ const VideoSection = () => {
                         className="mx-auto w-full h-auto rounded-lg"
                         url={vv}
                         onClick={handlePlayerClick}
+                        title="video wody"
                     />
                     <p className="bg-red-600 text-white text-[12px] font-medium absolute py-1 px-3 rounded-xl -top-2 z-20 -translate-x-2 sm:top-12 left-0 sm:-translate-x-1/2">
                         VIDEO

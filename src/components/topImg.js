@@ -12,7 +12,8 @@ const TopImg = () => (
                 layout="fullWidth"
                 loading="eager"
                 style={{minHeight:"10rem"}}
-                alt="Kajakiem po Tanwi Spływy kajakowe Susiec"
+                alt="Spływy kajakowe Tanew"
+                title="Spływy kajakowe Tanew"
                 durationFadeIn={600}
                 src="../assets/most.jpg"
             />

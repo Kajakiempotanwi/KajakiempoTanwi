@@ -1,8 +1,8 @@
 import React from "react";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
-import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
+import { graphql, useStaticQuery, Link } from "gatsby";
 
 import {
     HeroSection,
@@ -15,6 +15,19 @@ import {
 } from "../components/HomePage/index";
 
 const Home = () => {
+    const data = useStaticQuery(graphql`
+        query {
+            allDatoCmsSeoTekst {
+                edges {
+                    node {
+                        title
+                        desc
+                    }
+                }
+            }
+        }
+    `);
+
     return (
         <Layout>
             <HeroSection />
@@ -28,8 +41,8 @@ const Home = () => {
             >
                 <div className="absolute inset-0 h-full w-full min-h-[20rem] -z-10">
                     <StaticImage
-                    alt="most po tanwi"
-                    
+                        alt="most po tanwi"
+                        title="most po tanwi"
                         durationFadeIn={600}
                         quality={100}
                         style={{ width: "100%", minHeight: "20rem" }}
@@ -58,10 +71,23 @@ const Home = () => {
                     loading="lazy"
                 ></iframe>
             </section>
+            {data.allDatoCmsSeoTekst.edges.map(({ node }) => (
+                <div className="px-4 max-w-screen-lg mx-auto text-start my-12 lg:my-16">
+                    <h3 className="font-medium py-2 text-lg -tracking-wide">
+                        {node.title}
+                    </h3>
+                    <div
+                        id="descriptionHtml"
+                        dangerouslySetInnerHTML={{
+                            __html: node.desc,
+                        }}
+                    />
+                </div>
+            ))}
         </Layout>
     );
 };
 
-export const Head = () => <Seo title="Kajakiem Po Tanwi" />;
+export const Head = () => <Seo title="" />;
 
 export default Home;

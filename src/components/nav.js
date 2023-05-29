@@ -48,6 +48,7 @@ export default function Nav() {
                         to="/"
                         className="flex items-center justify-center relative"
                         aria-label="logo"
+                        title="Kajaki Po Tanwi Logo"
                     >
                         <div
                             className={`transition-all mr-2 duration-200 ${
@@ -62,6 +63,7 @@ export default function Nav() {
                                 loading="eager"
                                 placeholder="blurred"
                                 alt="Kajaki Po Tanwi Logo"
+                                title="Kajaki Po Tanwi Logo"
                                 src="../assets/lt.png"
                             />
                         </div>

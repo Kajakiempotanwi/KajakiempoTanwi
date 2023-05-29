@@ -124,8 +124,7 @@ const Footer = () => (
                     to="https://seovileo.pl/"
                 >
                     @Seovileo.pl
-                </Link>{" "}
-                / All rights reserved.
+                </Link>
             </p>
         </div>
     </footer>

@@ -30,6 +30,7 @@ const EtapsSection = () => {
                     loading="spływy kajakowe"
                     className="w-full h-full"
                     alt="Kajaki Po Tanwi"
+                    title="Kajaki Po Tanwi"
                     src="../../assets/etaps.jpg"
                 />
             </div>
@@ -103,7 +104,7 @@ const EtapsSection = () => {
                         <p className="p-4">{cdesc}</p>
                     </div>
                     <div className="relative mt-12">
-                        <div className="relative bg-gradient-to-br from-amber-500 to-orange-500 w-[80vw] md:w-80 h-2 rounded-3xl">
+                        <div className="relative bg-gradient-to-br from-amber-500 to-orange-500 w-[50vw] md:w-80 h-2 rounded-3xl">
                             <div className="absolute h-12 w-12 top-1/2 left-0 -translate-y-1/2 rounded-full btn_main">
                                 <svg
                                     className="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2"
@@ -154,7 +155,7 @@ const EtapsSection = () => {
                                     </defs>
                                 </svg>
                             </div>
-                            <div className="absolute h-12 w-12 top-1/2 left-1/4 -translate-y-1/2 rounded-full btn_main">
+                            <div className="absolute h-12 w-12 top-1/2 left-[33.33%] -translate-y-1/2 rounded-full btn_main">
                                 <svg
                                     className="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2"
                                     width="24"
@@ -204,7 +205,7 @@ const EtapsSection = () => {
                                     </defs>
                                 </svg>
                             </div>
-                            <div className="absolute h-12 w-12 top-1/2 left-2/4 -translate-y-1/2 rounded-full btn_main">
+                            <div className="absolute h-12 w-12 top-1/2 left-[66.66%] -translate-y-1/2 rounded-full btn_main">
                                 <svg
                                     className="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2"
                                     width="24"
@@ -254,7 +255,7 @@ const EtapsSection = () => {
                                     </defs>
                                 </svg>
                             </div>
-                            <div className="absolute h-12 w-12 top-1/2 left-3/4 -translate-y-1/2 rounded-full btn_main">
+                            <div className="absolute h-12 w-12 top-1/2 left-[99%] -translate-y-1/2 rounded-full btn_main">
                                 <svg
                                     className="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2"
                                     width="24"

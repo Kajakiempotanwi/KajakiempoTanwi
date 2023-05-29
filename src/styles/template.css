@@ -1,10 +1,19 @@
-#descriptionHtml div{
-    @apply mb-6
+#descriptionHtml div {
+    @apply mb-6;
 }
-#descriptionHtml p{
-    @apply mb-6
+#descriptionHtml p {
+    @apply mb-6;
+}
+#descriptionHtml img {
+    @apply my-8;
 }
 
-#descriptionHtml a{
-    @apply text-emerald-700 underline font-medium
+#descriptionHtml li {
+    list-style: disc;
+    margin-left: 1.2rem;
+    @apply my-4
+}
+
+#descriptionHtml a {
+    @apply text-emerald-700 underline font-medium;
 }

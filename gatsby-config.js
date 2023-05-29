@@ -5,9 +5,9 @@
 module.exports = {
     pathPrefix: "/kajakigatsby",
     siteMetadata: {
-        title: `Spływy Kajakowe`,
-        description: `Spływy kajakowe Kajakami po Tanwi`,
-        author: `Seovileo`, 
+        title: `Kajaki Tanew - Ekscytujące przygody na wodzie`,
+        description: `Zaplanuj niezapomnianą przygodę na wodach Tanwi z naszymi kajakami, Odkryj piękno natury i ciesz się aktywnym spływem Zarezerwuj i zanurz się w emocjach`,
+        author: `Seovileo`,
         siteUrl: `https://seovileo.pl/`,
     },
     plugins: [
@@ -52,16 +52,7 @@ module.exports = {
             },
         },
         `gatsby-transformer-sharp`,
-        {
-            resolve: `gatsby-plugin-sharp`,
-            options: {
-                defaults: {
-                    formats: [`webp`],
-                    quality: 90,
-                    breakpoints: [650, 1080, 1500],
-                },
-            },
-        },
+        `gatsby-plugin-sharp`,
         {
             resolve: `gatsby-plugin-manifest`,
             options: {

@@ -42,10 +42,11 @@ const CardsSection = () => {
                             style={{
                                 objectFit: "cover",
                                 width: "100%",
-                                height: "50%",
+                                height: "10rem",
                             }}
                             loading="eager"
                             image={getImage(item.img)}
+                            title={item.title}
                             alt={item.title}
                         />
 
