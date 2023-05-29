@@ -84,7 +84,7 @@ const HappySection = () => {
                                     </clipPath>
                                 </defs>
                             </svg>
-                            <p>{item.hdesc}</p>
+                            <p className="px-3">{item.hdesc}</p>
                         </div>
                     </div>
                 ))}

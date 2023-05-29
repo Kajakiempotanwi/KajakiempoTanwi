@@ -38,7 +38,7 @@ const EtapsSection = () => {
             <div className="absolute inset-0 bg-black opacity-50 -z-10" />
             <div className="grid md:grid-cols-2 max-w-screen-xl mx-auto px-6 text-white">
                 <div>
-                    <p className="w-full md:w-[70%] md:text-start mb-6 ">
+                    <p className="w-full md:w-[70%] font-medium md:text-start mb-6 ">
                         {desc}
                     </p>
                     <div className="grid grid-cols-2 lg:pr-24 space-y-2">
@@ -75,7 +75,7 @@ const EtapsSection = () => {
                                     </defs>
                                 </svg>
 
-                                <p className="font-medium">{item.hdesc}</p>
+                                <p className="font-medium text-start text-sm">{item.hdesc}</p>
                             </div>
                         ))}
                     </div>
@@ -105,7 +105,7 @@ const EtapsSection = () => {
                     </div>
                     <div className="relative mt-12">
                         <div className="relative bg-gradient-to-br from-amber-500 to-orange-500 w-[50vw] md:w-80 h-2 rounded-3xl">
-                            <div className="absolute h-12 w-12 top-1/2 left-0 -translate-y-1/2 rounded-full btn_main">
+                            <button className="absolute h-12 w-12 top-1/2 left-0 -translate-y-1/2 rounded-full btn_main">
                                 <svg
                                     className="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2"
                                     width="24"
@@ -154,8 +154,8 @@ const EtapsSection = () => {
                                         </clipPath>
                                     </defs>
                                 </svg>
-                            </div>
-                            <div className="absolute h-12 w-12 top-1/2 left-[33.33%] -translate-y-1/2 rounded-full btn_main">
+                            </button>
+                            <button className="absolute h-12 w-12 top-1/2 left-[33.33%] -translate-y-1/2 rounded-full btn_main">
                                 <svg
                                     className="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2"
                                     width="24"
@@ -204,8 +204,8 @@ const EtapsSection = () => {
                                         </clipPath>
                                     </defs>
                                 </svg>
-                            </div>
-                            <div className="absolute h-12 w-12 top-1/2 left-[66.66%] -translate-y-1/2 rounded-full btn_main">
+                            </button>
+                            <button className="absolute h-12 w-12 top-1/2 left-[66.66%] -translate-y-1/2 rounded-full btn_main">
                                 <svg
                                     className="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2"
                                     width="24"
@@ -254,8 +254,8 @@ const EtapsSection = () => {
                                         </clipPath>
                                     </defs>
                                 </svg>
-                            </div>
-                            <div className="absolute h-12 w-12 top-1/2 left-[99%] -translate-y-1/2 rounded-full btn_main">
+                            </button>
+                            <button className="absolute h-12 w-12 top-1/2 left-[99%] -translate-y-1/2 rounded-full btn_main">
                                 <svg
                                     className="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2"
                                     width="24"
@@ -304,7 +304,7 @@ const EtapsSection = () => {
                                         </clipPath>
                                     </defs>
                                 </svg>
-                            </div>
+                            </button>
                         </div>
                     </div>
                 </div>

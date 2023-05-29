@@ -31,14 +31,14 @@ const CardTemplate = ({
                             <div class="flex flex-col items-center md:items-center">
                                 <div className="md:px-12">
                                     <GatsbyImage
-                                        className="h-72 w-72 lg:py-64 lg:px-96 rounded-xl shadow-lg"
+                                        className="h-72 w-72 lg:py-64 lg:px-96 rounded-xl shadow-xl"
                                         image={getImage(datoCmsCardd.img)}
                                         alt={datoCmsCardd.title}
                                         title={datoCmsCardd.title}
                                     />
                                     <div className="flex items-start justify-end mx-3 space-x-4 my-4"></div>
                                 </div>
-                                <div class="pl-2">
+                                <div class="pl-4 px-12">
                                     <div class="block mt-1 -tracking-wide rounded-lg py-3 md:px-12 lg:-mr-14 text-start">
                                         <h1 class="text-3xl font-bold capitalize pb-2 mb-5">
                                             {datoCmsCardd.title}
