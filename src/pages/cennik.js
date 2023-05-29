@@ -1,31 +1,53 @@
 import React from "react";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
-import { Link } from "gatsby";
+import { graphql, useStaticQuery, Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
 import TopImg from "../components/topImg";
 
 const Cennik = () => {
+    const data = useStaticQuery(graphql`
+        query {
+            datoCmsCennik {
+                ceny {
+                    title
+                    price
+                    id
+                }
+                desc
+                stitle
+                title
+            }
+        }
+    `);
+    const priceData = data.datoCmsCennik;
+    const { ceny, desc, stitle, title } = priceData;
+
     return (
         <Layout>
             <TopImg />
 
             <div className="mb-6 mt-10 md:my-16">
-                <p className="p_kayak">Kajakiem Po Tanwi</p>
+                <p className="p_kayak">{stitle}</p>
                 <h2 className="font-bold text-lg lg:text-xl text-gray-700">
-                    Cennik
+                    {title}
                 </h2>
             </div>
             <div className="flex flex-col md:flex-row mx-auto max-w-screen-2xl">
                 <div className="w-full lg:w-4/6 md:mx-10 lg:mx-24 rounded-lg text-start">
-                    <div className="flex-between bg-green-100 font-medium py-1 px-2 rounded-md">
-                        <p className="capitalize">dwuosobowy kajak</p>
-                        <p>80zł/dzień</p>
-                    </div>
+                    {ceny.map((item, id) => (
+                        <div
+                            key={id}
+                            className="flex-between bg-green-100 font-medium py-1 px-2 rounded-md"
+                        >
+                            <p className="capitalize">{item.title}</p>
+                            <p>{item.price}</p>
+                        </div>
+                    ))}
                     <StaticImage
-                    durationFadeIn={600}
-                    alt="kajak"
+                        durationFadeIn={600}
+                        alt="kajak"
                         quality={100}
                         className="w-full object-contain"
                         src="../assets/kajak.jpg"
@@ -36,32 +58,12 @@ const Cennik = () => {
 
                     <div className="flex flex-col md:flex-row mt-4 md:my-10 text-start">
                         <div className="w-full rounded-lg ">
-                            <p className="px-4 mb-6">
-                                <strong>Kajaki firmy ROTOMOD</strong> -
-                                dwuosobowy kajak rekreacyjno - turystyczny dla
-                                początkujących i zaawansowanych z dodatkowym
-                                siedzeniem dla dziecka. Bardzo wygodne siedzenia
-                                z wysokimi oparciami zapewniają wygodę podczas
-                                całodniowych wypraw. Szybki, zwinny ale i
-                                stabilny kajak, łatwy do prowadzenia.
-                            </p>
-                            <p className="px-4 mb-6">
-                                <strong>Wiosła egalis twin Alu </strong> -
-                                proste, lekkie i wytrzymałe wiosła, idealne na
-                                spływ po rzece, zapewniają komfort w sterowaniu
-                                kajakiem a takze że względu na swoją długość
-                                ułatwiają odepchnięcie się od ewentualnej
-                                przeszkody.
-                            </p>
-                            <p className="px-4">
-                                <strong>
-                                    Kamizelki asekuracyjne firmy RTM
-                                </strong>
-                                - kamizelki w rozmiarach od S do XXL więc każdy
-                                znajdzie rozmiar dla siebie, wygodne i proste w
-                                zapięciu kamizelki, zapewniają komfort i
-                                bezpieczeństwo podczas spływu.
-                            </p>
+                            <div
+                                id="descriptionHtml"
+                                dangerouslySetInnerHTML={{
+                                    __html: desc,
+                                }}
+                            />
                         </div>
                     </div>
                 </div>
@@ -77,8 +79,8 @@ const Cennik = () => {
                                 to="https://www.facebook.com/kajakiempotanwi"
                             >
                                 <StaticImage
-                                durationFadeIn={600}
-                                alt="facebook"
+                                    durationFadeIn={600}
+                                    alt="facebook"
                                     quality={100}
                                     height={33}
                                     width={33}
@@ -90,8 +92,8 @@ const Cennik = () => {
                                 to="https://www.instagram.com/kajakiempotanwi/?igshid=ZGUzMzM3NWJiOQ%3D%3D&fbclid=IwAR3KMcH9JdBcMrolmljM264sarvvk8xuibITApf9M6KBNud7tiR7egu0OZg"
                             >
                                 <StaticImage
-                                durationFadeIn={600}
-                                alt="instagram"
+                                    durationFadeIn={600}
+                                    alt="instagram"
                                     quality={100}
                                     height={33}
                                     width={33}
