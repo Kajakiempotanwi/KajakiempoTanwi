@@ -38,7 +38,7 @@ const EtapsSection = ({ initialText }) => {
                     quality={100}
                     layout="constrained"
                     loading="spływy kajakowe"
-                    className="w-full h-full"
+                    className="w-full h-full" 
                     alt="Kajaki Po Tanwi"
                     title="Kajaki Po Tanwi"
                     src="../../assets/etaps.jpg"
