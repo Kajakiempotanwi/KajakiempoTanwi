@@ -41,7 +41,7 @@ const HeroSection = () => {
                     className="text-white text-sm md:text-base border py-1.5 px-6 rounded-2xl text-center md:hover:bg-white/10"
                     to="/cennik"
                 >
-                    Cennik
+                    Zadzwoń
                 </Link>
             </div>
         </section>

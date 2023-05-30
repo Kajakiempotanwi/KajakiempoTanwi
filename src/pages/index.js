@@ -41,7 +41,7 @@ const Home = () => {
             >
                 <div className="absolute inset-0 h-full w-full min-h-[20rem] -z-10">
                     <StaticImage
-                        alt="most po tanwi"
+                        alt="most po tanew"
                         title="most po tanwi"
                         durationFadeIn={600}
                         quality={100}

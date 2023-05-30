@@ -47,7 +47,7 @@ const CardsSection = () => {
                             loading="eager"
                             image={getImage(item.img)}
                             title={item.title}
-                            alt={item.title}
+                            alt="kajaki tanew"
                         />
 
                         <h3 className="pb-2 pt-4 px-3 font-bold uppercase">
