@@ -23,7 +23,7 @@ const HeroSection = () => {
                 layout="constrained"
                 durationFadeIn={600}
                 loading="eager"
-                className="w-full h-full min-h-[23rem]"
+                className="w-full h-full min-h-[27rem]"
                 alt="Kajaki Po Tanwi"
                 title="Kajaki Po Tanwi"
                 src="../../assets/hero.jpg"
@@ -36,10 +36,10 @@ const HeroSection = () => {
                 <p className="sm:w-1/2 lg:w-1/3 mx-auto text-center text-gray-200 mb-4">
                     {desc}
                 </p>
-                <h1 className="text-gray-200 tracking-wider mb-2">Kajaki Tanew</h1>
+                <h1 className="text-gray-200 tracking-wider mb-3 md:mb-6">Kajaki Tanew</h1>
                 <Link
-                    className="text-white text-sm md:text-base border py-1.5 px-6 rounded-2xl text-center md:hover:bg-white/10"
-                    to="/cennik"
+                    className="text-white text-sm md:text-base transition-all border py-1.5 px-6 rounded-2xl text-center md:hover:bg-green-500 md:hover:shadow-green-500 bg-gradient-to-tr from-green-900 to bg-green-600 shadow-lg shadow-green-900"
+                    to="/kontakt"
                 >
                     Zadzwoń
                 </Link>
