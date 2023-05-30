@@ -15,6 +15,10 @@ const EtapsSection = ({ initialText }) => {
                     hdesc
                     id
                 }
+                ccdesc {
+                    id
+                    hdesc
+                }
             }
         }
     `);
@@ -26,10 +30,10 @@ const EtapsSection = ({ initialText }) => {
         setShowButton(false);
     };
     const etapsData = data.datoCmsEtap;
-    const { cdesc, ctitle, desc, title, stitle, happy } = etapsData;
+    const { cdesc, ctitle, desc, title, stitle, happy, ccdesc } = etapsData;
     return (
         <section id="etaps" className=" relative py-20">
-            <div className="absolute inset-0 -z-20 w-full h-full bg-fixed">
+            <div className="absolute inset-0 -z-20 w-full h-full">
                 <StaticImage
                     quality={100}
                     layout="constrained"
@@ -41,32 +45,32 @@ const EtapsSection = ({ initialText }) => {
                 />
             </div>
 
-            <div className="absolute inset-0 bg-black opacity-50 -z-10" />
+            <div className="absolute inset-0 bg-black opacity-60 -z-10" />
             <div className="grid md:grid-cols-2 max-w-screen-xl mx-auto px-6 text-white">
                 <div>
                     <p className="w-full md:w-[70%] font-medium md:text-start mb-6 ">
                         {desc}
                     </p>
-                    <div className="grid grid-cols-2 lg:pr-24 space-y-2">
+                    <div className="grid grid-cols-2 lg:pr-24">
                         {happy.map((item, id) => (
                             <div
                                 key={id}
-                                className="flex items-center justify-start"
+                                className="flex items-stretch justify-start"
                             >
                                 <div>
                                     <svg
                                         width="24"
                                         height="24"
                                         viewBox="0 0 24 24"
-                                        className="mr-2"
+                                        className="mr-1.5"
                                         fill="none"
                                         xmlns="http://www.w3.org/2000/svg"
                                     >
                                         <g clip-path="url(#clip0_1465_262)">
                                             <path
                                                 d="M5 12L10 17L20 7"
-                                                stroke="white"
-                                                stroke-width="2"
+                                                stroke="green"
+                                                stroke-width="4"
                                                 stroke-linecap="round"
                                                 stroke-linejoin="round"
                                             />
@@ -111,7 +115,7 @@ const EtapsSection = ({ initialText }) => {
                         <p className="bg-gradient-to-br from-amber-500 to-orange-500 w-full py-3 text-white font-medium">
                             {ctitle}
                         </p>
-                        <div>
+                        <div className="text-start">
                             <p className={showButton ? "p-4" : "hidden"}>
                                 {cdesc}
                             </p>
@@ -122,213 +126,238 @@ const EtapsSection = ({ initialText }) => {
                     </div>
                     <div className="relative mt-12">
                         <div className="relative bg-gradient-to-br from-amber-500 to-orange-500 w-[50vw] md:w-80 h-2 rounded-3xl">
-                            <button
-                                onClick={() =>
-                                    changeText(
-                                        "text fgdgfdg dfgfd gdfg fdg fdg dfgfgdf"
-                                    )
-                                }
-                                className="absolute h-12 w-12 top-1/2 left-0 -translate-y-1/2 rounded-full btn_main"
-                            >
-                                <svg
-                                    className="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <g clip-path="url(#clip0_1465_238)">
-                                        <path
-                                            d="M6 18V15"
-                                            stroke="white"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                        <path
-                                            d="M10 18V18.01"
-                                            stroke="white"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                        <path
-                                            d="M14 18V18.01"
-                                            stroke="white"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                        <path
-                                            d="M18 18V18.01"
-                                            stroke="white"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_1465_238">
-                                            <rect
+
+
+
+                                        <button
+                                            key={0}
+                                            onClick={() =>
+                                                changeText(ccdesc[0].hdesc)
+                                            }
+                                            className="absolute h-12 w-12 top-1/2 left-0 -translate-y-1/2 rounded-full btn_main"
+                                        >
+                                            <svg
+                                                className="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2"
                                                 width="24"
                                                 height="24"
-                                                fill="white"
-                                            />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </button>
-                            <button className="absolute h-12 w-12 top-1/2 left-[33.33%] -translate-y-1/2 rounded-full btn_main">
-                                <svg
-                                    className="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <g clip-path="url(#clip0_1465_244)">
-                                        <path
-                                            d="M6 18V15"
-                                            stroke="white"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                        <path
-                                            d="M10 18V12"
-                                            stroke="white"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                        <path
-                                            d="M14 18V18.01"
-                                            stroke="white"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                        <path
-                                            d="M18 18V18.01"
-                                            stroke="white"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_1465_244">
-                                            <rect
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <g clip-path="url(#clip0_1465_238)">
+                                                    <path
+                                                        d="M6 18V15"
+                                                        stroke="white"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                    <path
+                                                        d="M10 18V18.01"
+                                                        stroke="white"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                    <path
+                                                        d="M14 18V18.01"
+                                                        stroke="white"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                    <path
+                                                        d="M18 18V18.01"
+                                                        stroke="white"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1465_238">
+                                                        <rect
+                                                            width="24"
+                                                            height="24"
+                                                            fill="white"
+                                                        />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </button>
+
+                                        <button
+                                            key={1}
+                                            onClick={() =>
+                                                changeText(ccdesc[1].hdesc)
+                                            }
+                                            className="absolute h-12 w-12 top-1/2 left-[33.33%] -translate-y-1/2 rounded-full btn_main"
+                                        >
+                                            <svg
+                                                className="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2"
                                                 width="24"
                                                 height="24"
-                                                fill="white"
-                                            />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </button>
-                            <button className="absolute h-12 w-12 top-1/2 left-[66.66%] -translate-y-1/2 rounded-full btn_main">
-                                <svg
-                                    className="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <g clip-path="url(#clip0_1465_250)">
-                                        <path
-                                            d="M6 18V15"
-                                            stroke="white"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                        <path
-                                            d="M10 18V12"
-                                            stroke="white"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                        <path
-                                            d="M14 18V9"
-                                            stroke="white"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                        <path
-                                            d="M18 18V18.01"
-                                            stroke="white"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_1465_250">
-                                            <rect
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <g clip-path="url(#clip0_1465_244)">
+                                                    <path
+                                                        d="M6 18V15"
+                                                        stroke="white"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                    <path
+                                                        d="M10 18V12"
+                                                        stroke="white"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                    <path
+                                                        d="M14 18V18.01"
+                                                        stroke="white"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                    <path
+                                                        d="M18 18V18.01"
+                                                        stroke="white"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1465_244">
+                                                        <rect
+                                                            width="24"
+                                                            height="24"
+                                                            fill="white"
+                                                        />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </button>
+
+                                        <button
+                                            key={2}
+                                            onClick={() =>
+                                                changeText(ccdesc[2].hdesc)
+                                            }
+                                            className="absolute h-12 w-12 top-1/2 left-[66.66%] -translate-y-1/2 rounded-full btn_main"
+                                        >
+                                            <svg
+                                                className="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2"
                                                 width="24"
                                                 height="24"
-                                                fill="white"
-                                            />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </button>
-                            <button className="absolute h-12 w-12 top-1/2 left-[99%] -translate-y-1/2 rounded-full btn_main">
-                                <svg
-                                    className="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <g clip-path="url(#clip0_1465_256)">
-                                        <path
-                                            d="M6 18V15"
-                                            stroke="white"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                        <path
-                                            d="M10 18V12"
-                                            stroke="white"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                        <path
-                                            d="M14 18V9"
-                                            stroke="white"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                        <path
-                                            d="M18 18V6"
-                                            stroke="white"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_1465_256">
-                                            <rect
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <g clip-path="url(#clip0_1465_250)">
+                                                    <path
+                                                        d="M6 18V15"
+                                                        stroke="white"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                    <path
+                                                        d="M10 18V12"
+                                                        stroke="white"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                    <path
+                                                        d="M14 18V9"
+                                                        stroke="white"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                    <path
+                                                        d="M18 18V18.01"
+                                                        stroke="white"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1465_250">
+                                                        <rect
+                                                            width="24"
+                                                            height="24"
+                                                            fill="white"
+                                                        />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </button>
+
+
+                                        <button
+                                            key={3}
+                                            onClick={() =>
+                                                changeText(ccdesc[3].hdesc)
+                                            }
+                                            className="absolute h-12 w-12 top-1/2 left-[99%] -translate-y-1/2 rounded-full btn_main"
+                                        >
+                                            <svg
+                                                className="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2"
                                                 width="24"
                                                 height="24"
-                                                fill="white"
-                                            />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </button>
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <g clip-path="url(#clip0_1465_256)">
+                                                    <path
+                                                        d="M6 18V15"
+                                                        stroke="white"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                    <path
+                                                        d="M10 18V12"
+                                                        stroke="white"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                    <path
+                                                        d="M14 18V9"
+                                                        stroke="white"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                    <path
+                                                        d="M18 18V6"
+                                                        stroke="white"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1465_256">
+                                                        <rect
+                                                            width="24"
+                                                            height="24"
+                                                            fill="white"
+                                                        />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </button>
+
                         </div>
                     </div>
                 </div>
