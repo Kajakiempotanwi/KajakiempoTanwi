@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { graphql, useStaticQuery, Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
-const EtapsSection = () => {
+const EtapsSection = ({ initialText }) => {
     const data = useStaticQuery(graphql`
         query {
             datoCmsEtap {
@@ -18,7 +18,13 @@ const EtapsSection = () => {
             }
         }
     `);
+    const [text, setText] = useState(initialText);
+    const [showButton, setShowButton] = useState(true);
 
+    const changeText = (newText) => {
+        setText(newText);
+        setShowButton(false);
+    };
     const etapsData = data.datoCmsEtap;
     const { cdesc, ctitle, desc, title, stitle, happy } = etapsData;
     return (
@@ -47,41 +53,45 @@ const EtapsSection = () => {
                                 key={id}
                                 className="flex items-center justify-start"
                             >
-                                <svg
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    className="mr-2"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <g clip-path="url(#clip0_1465_262)">
-                                        <path
-                                            d="M5 12L10 17L20 7"
-                                            stroke="white"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_1465_262">
-                                            <rect
-                                                width="24"
-                                                height="24"
-                                                fill="white"
+                                <div>
+                                    <svg
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        className="mr-2"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <g clip-path="url(#clip0_1465_262)">
+                                            <path
+                                                d="M5 12L10 17L20 7"
+                                                stroke="white"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
                                             />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1465_262">
+                                                <rect
+                                                    width="24"
+                                                    height="24"
+                                                    fill="white"
+                                                />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
 
-                                <p className="font-medium text-start text-sm">{item.hdesc}</p>
+                                <p className="font-medium text-start text-sm">
+                                    {item.hdesc}
+                                </p>
                             </div>
                         ))}
                     </div>
                     <Link
                         to="/kontakt"
-                        className="btn_main flex-start w-max mt-12"
+                        className="btn_main flex text-center mx-auto md:mx-0 w-max mt-12"
                     >
                         Kontakt
                     </Link>
@@ -101,11 +111,25 @@ const EtapsSection = () => {
                         <p className="bg-gradient-to-br from-amber-500 to-orange-500 w-full py-3 text-white font-medium">
                             {ctitle}
                         </p>
-                        <p className="p-4">{cdesc}</p>
+                        <div>
+                            <p className={showButton ? "p-4" : "hidden"}>
+                                {cdesc}
+                            </p>
+                            <p className={!showButton ? "p-4" : "hidden"}>
+                                {text}
+                            </p>
+                        </div>
                     </div>
                     <div className="relative mt-12">
                         <div className="relative bg-gradient-to-br from-amber-500 to-orange-500 w-[50vw] md:w-80 h-2 rounded-3xl">
-                            <button className="absolute h-12 w-12 top-1/2 left-0 -translate-y-1/2 rounded-full btn_main">
+                            <button
+                                onClick={() =>
+                                    changeText(
+                                        "text fgdgfdg dfgfd gdfg fdg fdg dfgfgdf"
+                                    )
+                                }
+                                className="absolute h-12 w-12 top-1/2 left-0 -translate-y-1/2 rounded-full btn_main"
+                            >
                                 <svg
                                     className="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2"
                                     width="24"
