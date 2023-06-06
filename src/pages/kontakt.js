@@ -27,12 +27,12 @@ const Kontakt = () => {
                     ></iframe>
                 </div>
                 <div class="container px-5 py-12 lg:py-16 mx-auto flex">
-                    <div class="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
+                    <div class="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full my-12 mx-6 mt-12 md:mt-0 relative z-10 shadow-md">
                         
                         <div className="flex-center flex-col">
-                            <h1 className="text-lg font-bold">
+                            <h2 className="text-lg font-bold">
                             Jesteśmy Dostępni 7 dni w tygodniu
-                    </h1>
+                    </h2>
                     <p className="text-green-700 font-bold my-3">Pon. – Nd. od 8 do 17</p>
                     <p className="mb-3">Obsługujemy klientów indywidualnych jak i grupy zorganizowane</p>
                             <Link

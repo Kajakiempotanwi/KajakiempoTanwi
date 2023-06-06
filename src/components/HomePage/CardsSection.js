@@ -36,7 +36,7 @@ const CardsSection = () => {
                     <Link
                         key={id}
                         to={item.slug}
-                        className="border md:hover:bg-[#dbdfde] md:hover:scale-[1.02] md:hover:shadow-xl transition-transform bg-[#E2E9E8] rounded-lg shadow-lg mx-auto overflow-hidden w-[90%] h-[max]"
+                        className="border md:hover:bg-[#dbdfde] md:hover:scale-[1.02] md:hover:shadow-xl transition-transform bg-[#E2E9E8] rounded-lg shadow-lg mx-auto overflow-hidden w-[95%] h-[max]"
                     >
                         <GatsbyImage
                             style={{
@@ -53,8 +53,8 @@ const CardsSection = () => {
                         <h3 className="pb-2 pt-4 px-3 font-bold uppercase">
                             {item.title}
                         </h3>
-                        <p className="pb-4 px-6">{item.desc}</p>
-                        <p className="px-3 pb-8 Link_kayak">ZOBACZ &#8594;</p>
+                        <p className="pb-4 px-6 md:px-2 lg:px-6">{item.desc}</p>
+                        <p className="px-3 pb-6 Link_kayak">ZOBACZ &#8594;</p>
                     </Link>
                 ))}
             </div>

@@ -5,7 +5,7 @@
 module.exports = {
     pathPrefix: "/kajakigatsby",
     siteMetadata: {
-        title: `Kajaki Tanew - Ekscytujące przygody na wodzie`,
+        title: `Kajaki Tanew - Ekscytujące przygody, spływy kajakowe`,
         description: `Zaplanuj niezapomnianą przygodę na wodach Tanwi z naszymi kajakami, Odkryj piękno natury i ciesz się aktywnym spływem Zarezerwuj i zanurz się w emocjach`,
         author: `Seovileo`,
         siteUrl: `https://seovileo.pl/`,

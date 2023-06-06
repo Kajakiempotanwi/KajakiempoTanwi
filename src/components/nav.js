@@ -68,7 +68,7 @@ export default function Nav() {
                             />
                         </div>
                         <p
-                            className={`absolute w-max left-full -tracking-wide font-bold text-sm sm:text-base lg:text-lg ${
+                            className={` w-max left-full -tracking-wide font-bold text-sm sm:text-base lg:text-lg z-20 ${
                                 navbar || showMenu
                                     ? "text-gray-800"
                                     : "text-amber-400 drop-shadow-xl"
@@ -107,6 +107,7 @@ export default function Nav() {
                     >
                         <li className="mx-5 my-2 px-2 py-2">
                             <Link
+                                tabIndex={showMenu ? "0" : "-1"}
                                 onClick={closeMenu}
                                 aria-label="Strona Główna"
                                 className={`md:hover:text-amber-500 ${
@@ -121,6 +122,7 @@ export default function Nav() {
                         </li>
                         <li className="mx-5 my-2 px-2 py-2">
                             <Link
+                                tabIndex={showMenu ? "0" : "-1"}
                                 onClick={closeMenu}
                                 aria-label="Szlak Kajakowy"
                                 className={`md:hover:text-amber-500 ${
@@ -135,6 +137,7 @@ export default function Nav() {
                         </li>
                         <li className="mx-5 my-2 px-2 py-2">
                             <Link
+                                tabIndex={showMenu ? "0" : "-1"}
                                 onClick={closeMenu}
                                 aria-label="Cennik"
                                 className={`md:hover:text-amber-500 ${
@@ -150,6 +153,7 @@ export default function Nav() {
 
                         <li className="mx-5 my-2 px-2 py-2">
                             <Link
+                                tabIndex={showMenu ? "0" : "-1"}
                                 onClick={closeMenu}
                                 aria-label="galeria"
                                 className={`md:hover:text-amber-500 ${
@@ -164,6 +168,7 @@ export default function Nav() {
                         </li>
                         <li className="mx-5 my-2 px-2 py-2">
                             <Link
+                                tabIndex={showMenu ? "0" : "-1"}
                                 onClick={closeMenu}
                                 aria-label="kontakt"
                                 className={`md:hover:text-amber-500 ${

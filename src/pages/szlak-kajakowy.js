@@ -44,11 +44,11 @@ const SzlakKajakowy = () => {
                     {title}
                 </h1>
             </div>
-            <div className="flex flex-col md:flex-row mx-auto max-w-screen-2xl">
+            <div className="flex flex-col lg:flex-row md:mx-10 lg:mx-auto mx-auto max-w-screen-2xl">
                 {trasa.map((item, id) => (
                     <div
                         key={id}
-                        className="w-full lg:w-4/6 md:mx-10 lg:mx-24 rounded-lg"
+                        className="w-full lg:w-4/6 lg:mx-24 rounded-lg"
                     >
                         <GatsbyImage
                             className="w-full object-contain"
@@ -60,7 +60,7 @@ const SzlakKajakowy = () => {
                             {item.stitle}
                         </p>
 
-                        <div className="flex flex-col md:flex-row mt-4 md:my-10 text-start">
+                        <div className="flex flex-col lg:flex-row mt-4 md:my-10 text-start">
                             <div className="w-full lg:w-2/6 rounded-lg mb-6 px-4">
                                 <div className="flex items-center justify-start">
                                     <svg
@@ -222,7 +222,7 @@ const SzlakKajakowy = () => {
                     </div>
                 ))}
 
-                <div className="w-full lg:w-2/6 md:mx-10 my-10 lg:my-0 text-start px-4">
+                <div className="w-full lg:w-2/6 my-10 lg:my-0 text-start px-4">
                     <div className="border p-5 rounded-lg mb-6">
                         <p className="font-bold text-xl text-[#4B4B4B]">
                             Dołacz do nas:

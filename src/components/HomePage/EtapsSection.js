@@ -46,16 +46,16 @@ const EtapsSection = ({ initialText }) => {
             </div>
 
             <div className="absolute inset-0 bg-black opacity-60 -z-10" />
-            <div className="grid md:grid-cols-2 max-w-screen-xl mx-auto px-6 text-white">
+            <div className="grid lg:grid-cols-2 max-w-screen-xl mx-auto px-6 text-white">
                 <div>
-                    <p className="w-full md:w-[70%] font-medium md:text-start mb-6 ">
+                    <p className="w-full md:w-[70%] mx-auto font-medium lg:text-start mb-6 ">
                         {desc}
                     </p>
-                    <div className="grid grid-cols-2 lg:pr-24">
+                    <div className="flex flex-col items-start sm:items-center lg:items-start justify-start mx-auto md:w-[70%] text-start">
                         {happy.map((item, id) => (
                             <div
                                 key={id}
-                                className="flex items-stretch justify-start"
+                                className="flex py-1 "
                             >
                                 <div>
                                     <svg
@@ -95,7 +95,7 @@ const EtapsSection = ({ initialText }) => {
                     </div>
                     <Link
                         to="/kontakt"
-                        className="btn_main flex text-center mx-auto md:mx-0 w-max mt-12"
+                        className="btn_main flex text-center mx-auto lg:mx-24 w-max mt-12 mb-8"
                     >
                         Kontakt
                     </Link>
@@ -116,10 +116,10 @@ const EtapsSection = ({ initialText }) => {
                             {ctitle}
                         </p>
                         <div className="text-start">
-                            <p className={showButton ? "p-4" : "hidden"}>
+                            <p className={showButton ? "p-4 h-36 fade-in transition-all duration-200" : "hidden fade-out"}>
                                 {cdesc}
                             </p>
-                            <p className={!showButton ? "p-4" : "hidden"}>
+                            <p className={!showButton ? "p-4 fade-in h-80 transition-all duration-200" : "hidden fade-out"}>
                                 {text}
                             </p>
                         </div>

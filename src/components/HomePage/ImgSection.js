@@ -50,12 +50,14 @@ const ImgSection = () => {
                             title="spływ kajaki"
                         />
 
-                        <div className="text-start py-2 px-4">
-                            <h3 className="pb-2 pt-4 font-bold uppercase">
-                                {item.title}
-                            </h3>
-                            <p className="pb-4">{item.desc}</p>
-                        </div>
+                        {item.title && (
+                            <div className="text-start py-2 px-4">
+                                <h3 className="pb-2 pt-4 font-bold uppercase">
+                                    {item.title}
+                                </h3>
+                                <p className="pb-4">{item.desc}</p>
+                            </div>
+                        )}
                     </div>
                 ))}
             </div>
