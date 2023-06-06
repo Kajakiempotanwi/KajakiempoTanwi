@@ -133,6 +133,8 @@ const Kontakt = () => {
                             </p>
                             <div className="flex-center space-x-4 mb-6">
                                 <Link
+                                    target="_blank"
+                                    title="facebook"
                                     aria-label="Facebook"
                                     to="https://www.facebook.com/kajakiempotanwi"
                                 >
@@ -147,6 +149,7 @@ const Kontakt = () => {
                                     />
                                 </Link>
                                 <Link
+                                    target="_blank"
                                     aria-label="Instagram"
                                     to="https://www.instagram.com/kajakiempotanwi/?igshid=ZGUzMzM3NWJiOQ%3D%3D&fbclid=IwAR3KMcH9JdBcMrolmljM264sarvvk8xuibITApf9M6KBNud7tiR7egu0OZg"
                                 >

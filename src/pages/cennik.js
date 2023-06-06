@@ -78,6 +78,7 @@ const Cennik = () => {
                         </p>
                         <div className="space-x-4 my-3">
                             <Link
+                                target="_blank"
                                 aria-label="Facebook"
                                 to="https://www.facebook.com/kajakiempotanwi"
                             >
@@ -92,6 +93,7 @@ const Cennik = () => {
                                 />
                             </Link>
                             <Link
+                                target="_blank"
                                 aria-label="Instagram"
                                 to="https://www.instagram.com/kajakiempotanwi/?igshid=ZGUzMzM3NWJiOQ%3D%3D&fbclid=IwAR3KMcH9JdBcMrolmljM264sarvvk8xuibITApf9M6KBNud7tiR7egu0OZg"
                             >

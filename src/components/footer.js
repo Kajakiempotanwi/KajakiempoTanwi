@@ -92,6 +92,7 @@ const Footer = () => (
             <p className="text-lg font-bold mb-4 ">Media Społecznościowe</p>
             <div className="flex-center space-x-4 mb-6">
                 <Link
+                    target="_blank"
                     aria-label="Facebook"
                     to="https://www.facebook.com/kajakiempotanwi"
                 >
@@ -103,6 +104,7 @@ const Footer = () => (
                     />
                 </Link>
                 <Link
+                    target="_blank"
                     aria-label="Instagram"
                     to="https://www.instagram.com/kajakiempotanwi/?igshid=ZGUzMzM3NWJiOQ%3D%3D&fbclid=IwAR3KMcH9JdBcMrolmljM264sarvvk8xuibITApf9M6KBNud7tiR7egu0OZg"
                 >
@@ -116,10 +118,10 @@ const Footer = () => (
             </div>
         </div>
         <div className="bg-[#0B5A60] w-full text-center py-2 px-4 text-[13px]">
-            
             <p>
                 © 2023 - Design by{" "}
                 <Link
+                    target="_blank"
                     className="underline text-slate-200 hover:text-amber-500 duration-200 transition-colors"
                     to="https://seovileo.pl/"
                 >
