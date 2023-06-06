@@ -39,8 +39,8 @@ const EtapsSection = ({ initialText }) => {
                     layout="constrained"
                     loading="spływy kajakowe"
                     className="w-full h-full"
-                    alt="Kajaki Po Tanwi"
-                    title="Kajaki Po Tanwi"
+                    alt="Kajaki Tanew"
+                    title="Kajaki Tanew"
                     src="../../assets/etaps.jpg"
                 />
             </div>
@@ -103,9 +103,9 @@ const EtapsSection = ({ initialText }) => {
 
                 <div className="mt-12 md:mt-0 flex-start flex-col mx-auto">
                     <div className="flex-start flex-col mb-6">
-                        <h3 className="font-bold text-sm text-amber-400">
+                        <h2 className="font-bold uppercase -tracking-wider text-sm text-amber-400">
                             {stitle}
-                        </h3>
+                        </h2>
                         <div className="w-1/2 h-1 rounded-3xl border-b border-amber-600 bg-amber-400" />
                         <p className="text-xl md:text-2xl font-medium">
                             {title}

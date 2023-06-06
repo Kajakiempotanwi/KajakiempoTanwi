@@ -28,13 +28,17 @@ const Kontakt = () => {
                 </div>
                 <div class="container px-5 py-12 lg:py-16 mx-auto flex">
                     <div class="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full my-12 mx-6 mt-12 md:mt-0 relative z-10 shadow-md">
-                        
                         <div className="flex-center flex-col">
                             <h2 className="text-lg font-bold">
-                            Jesteśmy Dostępni 7 dni w tygodniu
-                    </h2>
-                    <p className="text-green-700 font-bold my-3">Pon. – Nd. od 8 do 17</p>
-                    <p className="mb-3">Obsługujemy klientów indywidualnych jak i grupy zorganizowane</p>
+                                Jesteśmy Dostępni 7 dni w tygodniu
+                            </h2>
+                            <p className="text-green-700 font-bold my-3">
+                                Pon. – Nd. od 8 do 17
+                            </p>
+                            <p className="mb-3">
+                                Obsługujemy klientów indywidualnych jak i grupy
+                                zorganizowane
+                            </p>
                             <Link
                                 to="tel:+48732536266"
                                 className="flex-center mb-4"
@@ -133,8 +137,8 @@ const Kontakt = () => {
                                     to="https://www.facebook.com/kajakiempotanwi"
                                 >
                                     <StaticImage
-                                    alt="facebook"
-                                    title="facebook"
+                                        alt="facebook"
+                                        title="facebook"
                                         quality={100}
                                         height={33}
                                         width={33}
@@ -147,8 +151,8 @@ const Kontakt = () => {
                                     to="https://www.instagram.com/kajakiempotanwi/?igshid=ZGUzMzM3NWJiOQ%3D%3D&fbclid=IwAR3KMcH9JdBcMrolmljM264sarvvk8xuibITApf9M6KBNud7tiR7egu0OZg"
                                 >
                                     <StaticImage
-                                    alt="instagram"
-                                    title="instagram"
+                                        alt="instagram"
+                                        title="instagram"
                                         quality={100}
                                         height={33}
                                         durationFadeIn={600}
@@ -165,6 +169,11 @@ const Kontakt = () => {
     );
 };
 
-export const Head = () => <Seo title="Kontakt" />;
+export const Head = () => (
+    <Seo
+        title="Kontakt -"
+        description="Zobacz najlepsze oferty spływów kajakowych na rzece Tanew. Sprawdź dostępne trasy, terminy i ceny. Zaplanuj aktywny wypoczynek na wodzie z rodziną i przyjaciółmi"
+    />
+);
 
 export default Kontakt;

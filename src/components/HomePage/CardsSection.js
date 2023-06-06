@@ -27,9 +27,9 @@ const CardsSection = () => {
         <section id="cards" className="pt-10 md:py-16 relative">
             <div className="mb-6">
                 <p className="p_kayak">{title}</p>
-                <h2 className="font-bold text-lg lg:text-xl text-gray-700">
+                <h3 className="font-bold text-lg lg:text-xl text-gray-700">
                     {desc}
-                </h2>
+                </h3>
             </div>
             <div className="grid grid-cols-1 gap-12 md:gap-0 px-6 md:grid-cols-3 justify-center w-full max-w-screen-xl mx-auto text-center">
                 {card.map((item, id) => (

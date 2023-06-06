@@ -21,9 +21,9 @@ const HappySection = () => {
         <section id="happy" className="py-10 md:py-16">
             <div className="mb-3">
                 <p className="p_kayak">{stitle}</p>
-                <h2 className="font-bold text-lg lg:text-xl text-gray-700">
+                <h3 className="font-bold text-lg lg:text-xl text-gray-700">
                     {title}
-                </h2>
+                </h3>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 max-w-screen-md mx-auto text-start  px-5 sm:pl-[12%] lg:pl-[6%]">
                 {zalety.map((item, id) => (

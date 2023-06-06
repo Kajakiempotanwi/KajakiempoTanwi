@@ -27,10 +27,10 @@ const ImgSection = () => {
     return (
         <section id="cards" className="pt-10 md:py-16">
             <div className="mb-6 md:my-12">
-                <p className="p_kayak">{stitle}</p>
-                <h2 className="font-bold text-lg lg:text-xl text-gray-700">
+                <h2 className="p_kayak">{stitle}</h2>
+                <h3 className="font-bold text-lg lg:text-xl text-gray-700">
                     {title}
-                </h2>
+                </h3>
             </div>
             <div className="grid grid-cols-1 gap-6 md:gap-12 px-6 md:grid-cols-2 justify-center w-full max-w-screen-xl mx-auto text-center">
                 {imgdesc.map((item, id) => (

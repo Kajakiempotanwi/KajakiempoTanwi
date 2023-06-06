@@ -167,7 +167,7 @@ const SzlakKajakowy = () => {
                             </div>
                             <div className="w-full lg:w-4/6 rounded-lg ">
                                 <div
-                                className="px-4"
+                                    className="px-4"
                                     id="descriptionHtml"
                                     dangerouslySetInnerHTML={{
                                         __html: item.opis,
@@ -211,7 +211,7 @@ const SzlakKajakowy = () => {
                                 </div>
 
                                 <div
-                                className="px-4"
+                                    className="px-4"
                                     id="descriptionHtml"
                                     dangerouslySetInnerHTML={{
                                         __html: item.opis2,
@@ -270,6 +270,11 @@ const SzlakKajakowy = () => {
     );
 };
 
-export const Head = () => <Seo title="Szlak Kajakowy" />;
+export const Head = () => (
+    <Seo
+        title="Spływy kajakowe"
+        description="Zobacz najlepsze oferty spływów kajakowych na rzece Tanew. Sprawdź dostępne trasy, terminy i ceny. Zaplanuj aktywny wypoczynek na wodzie z rodziną i przyjaciółmi."
+    />
+);
 
 export default SzlakKajakowy;

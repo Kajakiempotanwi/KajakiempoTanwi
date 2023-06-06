@@ -73,9 +73,9 @@ const Home = () => {
             </section>
             {data.allDatoCmsSeoTekst.edges.map(({ node }) => (
                 <div className="px-4 max-w-screen-lg mx-auto text-start my-12 lg:my-16">
-                    <h3 className="font-medium py-2 text-lg -tracking-wide">
+                    <h2 className="font-medium py-2 text-lg -tracking-wide">
                         {node.title}
-                    </h3>
+                    </h2>
                     <div
                         id="descriptionHtml"
                         dangerouslySetInnerHTML={{
@@ -88,6 +88,6 @@ const Home = () => {
     );
 };
 
-export const Head = () => <Seo title="" />;
+export const Head = () => <Seo title="" description="Zaplanuj niezapomnianą przygodę na wodach Tanwi z naszymi kajakami, Odkryj piękno natury i ciesz się aktywnym spływem Zarezerwuj i zanurz się w emocjach" />;
 
 export default Home;

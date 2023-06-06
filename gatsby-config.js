@@ -5,8 +5,8 @@
 module.exports = {
     pathPrefix: "/kajakigatsby",
     siteMetadata: {
-        title: `Kajaki Tanew - Ekscytujące przygody, spływy kajakowe`,
-        description: `Zaplanuj niezapomnianą przygodę na wodach Tanwi z naszymi kajakami, Odkryj piękno natury i ciesz się aktywnym spływem Zarezerwuj i zanurz się w emocjach`,
+        title: `Kajaki Tanew - Ekscytujące spływy kajakowe`,
+        description: `Zobacz najlepsze oferty spływów kajakowych na rzece Tanew. Sprawdź dostępne trasy, terminy i ceny. Zaplanuj aktywny wypoczynek na wodzie z rodziną i przyjaciółmi`,
         author: `Seovileo`,
         siteUrl: `https://seovileo.pl/`,
     },
