@@ -18,5 +18,5 @@
 }
 
 #descriptionHtml a {
-    @apply text-emerald-700 underline font-medium;
+    @apply py-1 text-emerald-700 underline font-medium;
 }
