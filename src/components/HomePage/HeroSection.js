@@ -36,7 +36,7 @@ const HeroSection = () => {
                 <p className="sm:w-1/2 lg:w-1/3 mx-auto text-center text-gray-200 mb-4">
                     {desc}
                 </p>
-                <h1 className="text-gray-200 tracking-wider mb-3 md:mb-6">Kajaki Tanew</h1>
+                <h1 className="text-gray-200 tracking-wider mb-3 md:mb-6">Kajaki Tanew - spływy kajakowe</h1>
                 <Link
                     className="text-white text-sm md:text-base transition-all border py-1.5 px-6 rounded-2xl text-center md:hover:bg-green-500 md:hover:shadow-green-500 bg-gradient-to-tr from-green-900 to bg-green-600 shadow-lg shadow-green-900"
                     to="/kontakt"

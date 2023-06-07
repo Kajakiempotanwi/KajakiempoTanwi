@@ -30,9 +30,9 @@ const OpinieSection = () => {
         <section id="cards" className="pt-10 md:py-0">
             <div className="mb-6 md:mb-12">
                 <h3 className="p_kayak">{stitle}</h3>
-                <h5 className="font-bold text-lg lg:text-xl text-gray-700">
+                <h4 className="font-bold text-lg lg:text-xl text-gray-700">
                     {title}
-                </h5>
+                </h4>
             </div>
             <div className="grid grid-cols-1 gap-6 md:gap-12 px-6 md:grid-cols-2 justify-center w-full max-w-screen-xl mx-auto text-center">
                 {opinie.map((item, id) => (
