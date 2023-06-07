@@ -1,6 +1,9 @@
 #descriptionHtml div {
     @apply mb-6;
 }
+#descriptionHtml h2 span {
+    @apply py-6 font-medium text-lg;
+}
 #descriptionHtml p {
     @apply mb-6;
 }
