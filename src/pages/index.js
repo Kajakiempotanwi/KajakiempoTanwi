@@ -34,7 +34,7 @@ const Home = () => {
             <CardsSection />
             <EtapsSection />
             <HappySection />
-            <VideoSection />
+            {/* <VideoSection /> */}
             <section
                 id="most"
                 className="relative min-h-[20rem] md:min-h-[30rem] text-white"
