@@ -59,6 +59,9 @@ const VideoSection = () => {
     };
     return (
         <section id="video" className="bg-[#E2E9E8] py-12 md:py-20">
+            <h2 className="font-bold mb-5 text-gray-900">
+                <strong className="font-bold">Kajaki Tanew</strong> - Niezapomniana przygoda na wodach Tanwi
+            </h2>
             <div className="w-full px-4 sm:w-1/2 h-auto mx-auto rounded-md">
                 <div
                     role="button"

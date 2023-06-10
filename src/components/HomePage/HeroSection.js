@@ -24,9 +24,9 @@ const HeroSection = () => {
                 durationFadeIn={600}
                 loading="eager"
                 className="w-full h-full min-h-[27rem]"
-                alt="Kajaki Po Tanwi"
-                title="Kajaki Po Tanwi"
-                src="../../assets/hero.jpg"
+                alt="kajakiem po Tanwi"
+                title="kajakiem po Tanwi"
+                src="../../assets/kajakiem-po-Tanwi.jpg"
             />
             <div className="absolute w-full h-full inset-0 opacity-50 bg-[#00232E]" />
             <div className="absolute w-full left-1/2 top-1/2 px-4 -translate-x-1/2 -translate-y-1/2">

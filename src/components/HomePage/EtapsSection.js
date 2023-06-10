@@ -41,7 +41,7 @@ const EtapsSection = ({ initialText }) => {
                     className="w-full h-full"
                     alt="Kajaki Tanew"
                     title="Kajaki Tanew"
-                    src="../../assets/etaps.jpg"
+                    src="../../assets/kajaki-tanew.jpg"
                 />
             </div>
 

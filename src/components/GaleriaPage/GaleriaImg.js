@@ -79,8 +79,8 @@ const Galeria = () => {
                                         <GatsbyImage
                                             className="object-cover object-center w-full h-full block"
                                             image={getImage(node.img)}
-                                            alt="KAJAKIEM PO TANWI"
-                                            title="KAJAKIEM PO TANWI"
+                                            alt="kajaki tanew"
+                                            title="kajaki tanew"
                                         />
                                     </button>
                                 </div>

@@ -15,7 +15,7 @@ const TopImg = () => (
                 alt="Spływy kajakowe Tanew"
                 title="Spływy kajakowe Tanew"
                 durationFadeIn={600}
-                src="../assets/most.jpg"
+                src="../assets/most-tanew.jpg"
             />
         </div>
         <div className="absolute w-full h-full inset-0 opacity-50 bg-[#00232E]" />

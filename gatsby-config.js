@@ -7,8 +7,8 @@ module.exports = {
     siteMetadata: {
         title: `Kajaki Tanew - Ekscytujące spływy kajakowe`,
         description: `Zobacz najlepsze oferty spływów kajakowych na rzece Tanew. Sprawdź dostępne trasy, terminy i ceny. Zaplanuj aktywny wypoczynek na wodzie z rodziną i przyjaciółmi`,
-        author: `Seovileo`,
-        siteUrl: `https://seovileo.pl/`,
+        author: `Kajaki Tanew`,
+        siteUrl: `https://tanewkajaki.pl/`,
     },
     plugins: [
         {
@@ -23,23 +23,6 @@ module.exports = {
                 previewMode: false,
                 disableLiveReload: false,
                 pageSize: 500,
-            },
-        },
-
-        {
-            resolve: `gatsby-omni-font-loader`,
-            options: {
-                enableListener: true,
-                preconnect: [
-                    `https://fonts.googleapis.com`,
-                    `https://fonts.gstatic.com`,
-                ],
-                web: [
-                    {
-                        name: `Open Sans`,
-                        file: `https://fonts.googleapis.com/css2?family=Coming+Soon&family=Open+Sans:wght@400;500;600;700&display=swap'`,
-                    },
-                ],
             },
         },
         "gatsby-plugin-postcss",

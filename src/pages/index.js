@@ -46,7 +46,7 @@ const Home = () => {
                         durationFadeIn={600}
                         quality={100}
                         style={{ width: "100%", minHeight: "20rem" }}
-                        src="../assets/most.jpg"
+                        src="../assets/most-tanew.jpg"
                     />
                 </div>
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -88,6 +88,11 @@ const Home = () => {
     );
 };
 
-export const Head = () => <Seo title="" description="Zaplanuj niezapomnianą przygodę na wodach Tanwi z naszymi kajakami, Odkryj piękno natury i ciesz się aktywnym spływem Zarezerwuj i zanurz się w emocjach" />;
+export const Head = () => (
+    <Seo
+        title=""
+        description="Zarezerwuj niezapomnianą przygodę kajakową na malowniczej Tanwi z Kajakami Tanew. Odkryj piękno otaczającej natury i rozkoszuj się aktywnym spływem. Zanurz się w niepowtarzalnych emocjach"
+    />
+);
 
 export default Home;
