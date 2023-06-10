@@ -172,16 +172,15 @@ const VideoSection = () => {
                     <ReactPlayer
                         ref={playerRef}
                         muted
-                        loop
                         controls={isControls}
                         playing={isPlaying}
                         playIcon={false}
                         width="100%"
-                        height="100%"
-                        className="mx-auto rounded-lg h-96"
+                        height="13rem"
+                        className="mx-auto rounded-lg"
                         url={vv}
                         onClick={handlePlayerClick}
-                        title="video wody"
+                        title="video tanew"
                     />
                     <p className="bg-red-600 text-white text-[12px] font-medium absolute py-1 px-3 rounded-xl -top-2 z-20 -translate-x-2 sm:top-12 left-0 sm:-translate-x-1/2">
                         VIDEO
