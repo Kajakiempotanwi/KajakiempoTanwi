@@ -34,6 +34,10 @@ const Home = () => {
             <CardsSection />
             <EtapsSection />
             <HappySection />
+            <h2 className="font-bold mb-5 text-gray-900">
+                <strong className="font-bold">Kajaki Tanew</strong> -
+                Niezapomniana przygoda na wodach Tanwi
+            </h2>
             {/* <VideoSection /> */}
             <section
                 id="most"

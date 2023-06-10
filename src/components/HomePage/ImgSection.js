@@ -33,7 +33,7 @@ const ImgSection = () => {
                     {title}
                 </h3>
             </div>
-            <div className="grid grid-cols-1 gap-6 md:gap-12 px-6 md:grid-cols-2 justify-center w-full max-w-screen-xl mx-auto text-center">
+            <div className="grid grid-cols-1 gap-6 px-6 md:grid-cols-2 w-full max-w-screen-lg mx-auto text-center">
                 {imgdesc.map((item, id) => (
                     <div
                         key={id}
