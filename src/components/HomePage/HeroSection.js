@@ -20,8 +20,8 @@ const HeroSection = () => {
         <section id="hero" className="w-full min-h-[23rem] relative">
             <StaticImage
                 quality={100}
-                layout="constrained"
-                durationFadeIn={600}
+                width={1400}
+                height={700}
                 placeholder="none"
                 loading="eager"
                 className="w-full h-full min-h-[27rem]"

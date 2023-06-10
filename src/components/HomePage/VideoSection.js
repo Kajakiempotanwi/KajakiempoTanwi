@@ -66,13 +66,17 @@ const VideoSection = () => {
                 <div
                     role="button"
                     tabIndex={0}
-                    className="relative h-60 lg:96 w-full"
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
                     onKeyDown={(e) => {
                         if (e.key === "Enter" || e.key === " ") {
                             handlePlayerClick();
                         }
+                    }}
+                    style={{
+                        position: "relative",
+                        width: "100%",
+                        height: "max-content",
                     }}
                 >
                     {!isPlaying ? (
