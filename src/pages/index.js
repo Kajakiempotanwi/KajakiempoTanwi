@@ -9,7 +9,6 @@ import {
     CardsSection,
     EtapsSection,
     HappySection,
-    VideoSection,
     ImgSection,
     OpinieSection,
 } from "../components/HomePage/index";
@@ -38,7 +37,6 @@ const Home = () => {
                 <strong className="font-bold">Kajaki Tanew</strong> -
                 Niezapomniana przygoda na wodach Tanwi
             </h2>
-            {/* <VideoSection /> */}
             <section
                 id="most"
                 className="relative min-h-[20rem] md:min-h-[30rem] text-white"

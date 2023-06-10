@@ -17,6 +17,7 @@ const CardTemplate = ({
                     <div className="w-full -mt-4 -z-20">
                         <GatsbyImage
                             className="w-full h-full object-cover object-center absolute inset-0"
+                            loading="eager"
                             image={getImage(datoCmsCardd.img)}
                             alt={datoCmsCardd.title}
                             title={datoCmsCardd.title}
@@ -32,6 +33,7 @@ const CardTemplate = ({
                                 <div className="md:px-12">
                                     <GatsbyImage
                                         className="h-72 w-72 lg:py-64 lg:px-96 rounded-xl shadow-xl"
+                                        loading="eager"
                                         image={getImage(datoCmsCardd.img)}
                                         alt={datoCmsCardd.title}
                                         title={datoCmsCardd.title}
@@ -129,14 +131,14 @@ export const Head = ({ data: { datoCmsCardd } }) => (
 export default CardTemplate;
 
 export const query = graphql`
-    query MyQuery($slug: String) {
+    query ($slug: String) {
         datoCmsCardd(slug: { eq: $slug }) {
             desc
             bdesc
             title
             slug
             img {
-                gatsbyImageData
+                gatsbyImageData(placeholder: NONE, forceBlurhash: false)
             }
         }
         allDatoCmsCardd {
@@ -146,7 +148,7 @@ export const query = graphql`
                     desc
                     slug
                     img {
-                        gatsbyImageData
+                        gatsbyImageData(width: 250, height: 250)
                     }
                 }
             }
