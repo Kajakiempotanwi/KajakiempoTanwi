@@ -66,18 +66,13 @@ const VideoSection = () => {
                 <div
                     role="button"
                     tabIndex={0}
-                    className="relative h-max"
+                    className="relative h-60 lg:96 w-full"
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
                     onKeyDown={(e) => {
                         if (e.key === "Enter" || e.key === " ") {
                             handlePlayerClick();
                         }
-                    }}
-                    style={{
-                        position: "relative",
-                        width: "100%",
-                        height: "max-content",
                     }}
                 >
                     {!isPlaying ? (
@@ -179,7 +174,7 @@ const VideoSection = () => {
                         playIcon={false}
                         width="100%"
                         height="100%"
-                        className="mx-auto w-full h-auto rounded-lg"
+                        className="mx-auto rounded-lg h-96"
                         url={vv}
                         onClick={handlePlayerClick}
                         title="video wody"
