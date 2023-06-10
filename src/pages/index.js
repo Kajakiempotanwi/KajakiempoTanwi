@@ -93,7 +93,7 @@ const Home = () => {
 export const Head = () => (
     <Seo
         title=""
-        description="Zarezerwuj niezapomnianą przygodę kajakową na malowniczej Tanwi z Kajakami Tanew. Odkryj piękno otaczającej natury i rozkoszuj się aktywnym spływem. Zanurz się w niepowtarzalnych emocjach"
+        description="Kajaki Tanew odkryj malowniczą przygodę! Wynajmujemy kajaki i organizujemy niezapomniane spływy rzeką Tanew. Sprawdź naszą ofertę już teraz!"
     />
 );
 
