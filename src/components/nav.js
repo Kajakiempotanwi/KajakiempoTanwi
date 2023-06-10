@@ -79,6 +79,7 @@ export default function Nav() {
                     </Link>
                     <button
                         aria-label="Menu"
+                        title="Menu"
                         onClick={handleMenu}
                         className={`group lg:hidden p-2.5  z-50 rounded-lg bg-[#262626] `}
                     >
@@ -125,6 +126,7 @@ export default function Nav() {
                                 tabIndex={showMenu ? "0" : "-1"}
                                 onClick={closeMenu}
                                 aria-label="Szlak Kajakowy"
+                                title="Szlak Kajakowy"
                                 className={`md:hover:text-amber-500 ${
                                     navbar || showMenu
                                         ? "font-semibold text-slate-800 "
@@ -140,6 +142,7 @@ export default function Nav() {
                                 tabIndex={showMenu ? "0" : "-1"}
                                 onClick={closeMenu}
                                 aria-label="Cennik"
+                                title="Cennik"
                                 className={`md:hover:text-amber-500 ${
                                     navbar || showMenu
                                         ? "font-semibold text-slate-800 "
@@ -156,6 +159,7 @@ export default function Nav() {
                                 tabIndex={showMenu ? "0" : "-1"}
                                 onClick={closeMenu}
                                 aria-label="galeria"
+                                title="galeria"
                                 className={`md:hover:text-amber-500 ${
                                     navbar || showMenu
                                         ? "font-semibold text-slate-800 "
@@ -171,6 +175,7 @@ export default function Nav() {
                                 tabIndex={showMenu ? "0" : "-1"}
                                 onClick={closeMenu}
                                 aria-label="kontakt"
+                                title="kontakt"
                                 className={`md:hover:text-amber-500 ${
                                     navbar || showMenu
                                         ? "font-semibold text-slate-800 "
