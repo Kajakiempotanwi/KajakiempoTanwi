@@ -14,7 +14,6 @@ const OpinieSection = () => {
                         gatsbyImageData(
                             height: 50
                             width: 50
-                            outputPixelDensities: 1.5
                             placeholder: BLURRED
                         )
                     }

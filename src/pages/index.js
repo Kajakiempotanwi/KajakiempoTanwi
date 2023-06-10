@@ -45,6 +45,8 @@ const Home = () => {
                         title="most po tanwi"
                         durationFadeIn={600}
                         quality={100}
+                        width={1600}
+                        height={500}
                         style={{ width: "100%", minHeight: "20rem" }}
                         src="../assets/most-tanew.jpg"
                     />

@@ -11,9 +11,10 @@ const ImgSection = () => {
                 imgdesc {
                     img {
                         gatsbyImageData(
-                            breakpoints: [400]
-                            width: 500
-                            outputPixelDensities: 3
+                            width: 450
+                            height: 500
+                            placeholder: NONE
+                            forceBlurhash: false
                         )
                     }
                     desc

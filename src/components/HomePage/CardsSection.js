@@ -13,7 +13,12 @@ const CardsSection = () => {
                     slug
                     title
                     img {
-                        gatsbyImageData(breakpoints: [400])
+                        gatsbyImageData(
+                            forceBlurhash: false
+                            height: 200
+                            width: 400
+                            placeholder: NONE
+                        )
                     }
                     id
                 }

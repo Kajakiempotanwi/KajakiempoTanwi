@@ -11,9 +11,8 @@ const Galeria = () => {
                     node {
                         img {
                             gatsbyImageData(
-                                width: 700
-                                breakpoints: [200, 400, 600, 800]
-                                placeholder: BLURRED
+                                width: 600
+                                placeholder: NONE
                                 layout: CONSTRAINED
                             )
                         }
@@ -160,8 +159,8 @@ const Galeria = () => {
                 <GatsbyImage
                     image={getImage(selectedImage)}
                     style={{ borderRadius: "8px" }}
-                    alt="KAJAKIEM PO TANWI"
-                    title="KAJAKIEM PO TANWI"
+                    alt="Kajaki Tanew"
+                    title="Kajaki Tanew"
                     className="modal-image"
                 />
             </Modal>

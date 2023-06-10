@@ -116,10 +116,10 @@ const EtapsSection = ({ initialText }) => {
                             {ctitle}
                         </p>
                         <div className="text-start">
-                            <p className={showButton ? "p-4 h-36 fade-in transition-all duration-200" : "hidden fade-out"}>
+                            <p className={showButton ? "p-8 h-52 fade-in transition-all duration-200 text-lg font-semibold" : "hidden fade-out"}>
                                 {cdesc}
                             </p>
-                            <p className={!showButton ? "p-4 fade-in h-80 transition-all duration-200" : "hidden fade-out"}>
+                            <p className={!showButton ? "p-3 fade-in h-52 transition-all duration-200 text-sm font-medium" : "hidden fade-out"}>
                                 {text}
                             </p>
                         </div>

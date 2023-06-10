@@ -22,6 +22,7 @@ const HeroSection = () => {
                 quality={100}
                 layout="constrained"
                 durationFadeIn={600}
+                placeholder="none"
                 loading="eager"
                 className="w-full h-full min-h-[27rem]"
                 alt="kajakiem po Tanwi"

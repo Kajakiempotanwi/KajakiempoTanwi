@@ -8,14 +8,18 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const SzlakKajakowy = () => {
     const data = useStaticQuery(graphql`
-        query {
+        {
             datoCmsSzlak {
                 stitle
                 title
                 trasa {
                     id
                     img {
-                        gatsbyImageData(breakpoints: 600, layout: CONSTRAINED)
+                        gatsbyImageData(
+                            layout: CONSTRAINED
+                            width: 1100
+                            height: 500
+                        )
                     }
                     km
                     naglowek
