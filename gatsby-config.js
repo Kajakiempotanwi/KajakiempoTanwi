@@ -8,9 +8,11 @@ module.exports = {
         title: `Kajaki Tanew - Ekscytujące spływy kajakowe`,
         description: `Zobacz najlepsze oferty spływów kajakowych na rzece Tanew. Sprawdź dostępne trasy, terminy i ceny. Zaplanuj aktywny wypoczynek na wodzie z rodziną i przyjaciółmi`,
         author: `Kajaki Tanew`,
-        siteUrl: `https://tanewkajaki.pl/`,
+        siteUrl: `https://tanewkajaki.pl`,
     },
     plugins: [
+        `gatsby-plugin-sitemap`,
+        `gatsby-plugin-robots-txt`,
         {
             resolve: `gatsby-transformer-remark`,
             options: {},
