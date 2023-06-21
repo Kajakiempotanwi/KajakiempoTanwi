@@ -34,6 +34,10 @@ function Seo({ description, title, children }) {
             />
             <meta name="twitter:title" content={title || `Kajaki Tanew`} />
             <meta name="twitter:description" content={metaDescription} />
+            <meta
+                name="google-site-verification"
+                content="nlnbRhWiTlYTzJ5wpZH0zCyWx02infWWgf2PioN19Ms"
+            />
             {children}
         </>
     );
