@@ -15,6 +15,6 @@ const Galeria = () => {
     );
 };
 
-export const Head = () => <Seo title="Zdjęcia" />;
+export const Head = () => <Seo title="Zdjęcia - Kajakiem po Tanwi" />;
 
 export default Galeria;

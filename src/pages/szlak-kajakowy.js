@@ -278,7 +278,7 @@ const SzlakKajakowy = () => {
 
 export const Head = () => (
     <Seo
-        title="Spływy kajakowe"
+        title="Spływy kajakowe - Kajakiem po Tanwi"
         description="Zobacz najlepsze oferty spływów kajakowych na rzece Tanew. Sprawdź dostępne trasy, terminy i ceny. Zaplanuj aktywny wypoczynek na wodzie z rodziną i przyjaciółmi."
     />
 );
