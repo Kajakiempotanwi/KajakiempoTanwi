@@ -196,19 +196,6 @@ const KajakiSusiecPage = () => {
                                         </p>
                                         <div className="space-y-3">
                                             <h3 className="text-xl lg:text-2xl font-bold py-2 mb-2">
-                                                Dane kontaktowe:
-                                            </h3>
-                                            <Link
-                                                to="/kontakt"
-                                                type="button"
-                                                title="Kontakt"
-                                                class="btn_main my-1 mr-4"
-                                                data-mdb-ripple="true"
-                                                data-mdb-ripple-color="light"
-                                            >
-                                                Kontakt
-                                            </Link>
-                                            <h3 className="text-xl lg:text-2xl font-bold py-2 mb-5">
                                                 Cennik i Trasa
                                             </h3>
                                             <Link
@@ -231,6 +218,19 @@ const KajakiSusiecPage = () => {
                                                 data-mdb-ripple-color="light"
                                             >
                                                 Trasa
+                                            </Link>
+                                            <h3 className="text-xl lg:text-2xl font-bold py-2 mb-2">
+                                                Dane kontaktowe
+                                            </h3>
+                                            <Link
+                                                to="/kontakt"
+                                                type="button"
+                                                title="Kontakt"
+                                                class="btn_main my-1 mr-4"
+                                                data-mdb-ripple="true"
+                                                data-mdb-ripple-color="light"
+                                            >
+                                                Kontakt
                                             </Link>
                                         </div>
                                     </div>
