@@ -9,7 +9,7 @@ const KajakiSusiecPage = () => {
         <Layout>
             <div className="overflow-hidden w-full z-10">
                 <div className="relative object-bottom flex items-center min-h-[12rem] max-h-[13rem] overflow-hidden justify-center w-full">
-                    <div className="w-full -mt-4 -z-20">
+                    <div className="w-full h-full -mt-4 -z-20">
                         <StaticImage
                             className="w-full h-full object-cover object-center absolute inset-0"
                             loading="eager"
@@ -35,7 +35,7 @@ const KajakiSusiecPage = () => {
                                     />
                                     <div className="flex items-start justify-end mx-3 space-x-4 my-4"></div>
                                 </div>
-                                <div class="pl-4 px-12 max-w-screen-lg">
+                                <div class="pl-4 px-10 md:px-20">
                                     <div class="block mt-1 -tracking-wide rounded-lg py-3 md:px-12 lg:-mr-14 text-start">
                                         <h1 class="text-2xl lg:text-3xl font-bold pb-2 mb-5">
                                             Zapraszamy na spływy kajakowe:
