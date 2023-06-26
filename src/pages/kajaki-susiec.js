@@ -40,9 +40,8 @@ const KajakiSusiecPage = () => {
                                         <h1 class="text-2xl lg:text-3xl font-bold pb-2 mb-5">
                                             Zapraszamy na spływy kajakowe:
                                             <br />
-                                            Odkryj urok rzeki Tanew w
-                                            malowniczej miejscowości - Kajaki
-                                            Susiec!
+                                            Odkryj urok rzeki Tanew - Kajaki
+                                            Susiec !
                                         </h1>
                                         <p class="text-gray-700 text-lg mb-4 pb-2">
                                             Szukasz niezapomnianej przygody na
@@ -51,7 +50,7 @@ const KajakiSusiecPage = () => {
                                             Przyjedź do Susiec i dołącz do
                                             naszej wypożyczalni kajaków, gdzie
                                             czeka na Ciebie fascynująca podróż
-                                            na rzecze Tanew.
+                                            na rzecze.
                                         </p>
                                         <p class="text-gray-700 text-lg mb-4 pb-2">
                                             Spływ kajakowy to nie tylko
@@ -75,9 +74,8 @@ const KajakiSusiecPage = () => {
                                             Przyjedź do naszej wypożyczalni
                                             kajaków w miejscowości Susiec,
                                             położonej pod adresem Huta Szumy 56,
-                                            22-672 Huta Szumy. Tam czeka na
-                                            Ciebie niezapomniana przygoda na
-                                            rzece Tanew!
+                                            22-672, Tam czeka na Ciebie
+                                            niezapomniana przygoda!
                                         </p>
                                         <h2 className="text-xl lg:text-2xl font-bold py-2 mb-5">
                                             Kilka informacji, które warto znać
@@ -112,16 +110,17 @@ const KajakiSusiecPage = () => {
                                             zadbać o swoje bezpieczeństwo.
                                             Kamizelki asekuracyjne są
                                             obowiązkowe i należy je nosić przez
-                                            cały czas trwania spływu. Głębokość
-                                            wody na tej trasie nie przekracza 1
-                                            metra, więc jest to odcinek bardzo
-                                            bezpieczny, zwłaszcza dla osób
-                                            początkujących i rodzin z dziećmi.
+                                            cały czas trwania spływu. Woda na
+                                            tej trasie nie przekracza 1 m
+                                            głębokości, więc jest to odcinek
+                                            bardzo bezpieczny, zwłaszcza dla
+                                            osób początkujących i rodzin z
+                                            dziećmi.
                                         </p>
                                         <p class="text-gray-700 text-lg mb-4 pb-2">
                                             <strong>Wypożyczalnia:</strong>{" "}
                                             Można skorzystać z usług
-                                            wypożyczalni Kajaki Susiec, dane
+                                            wypożyczalni kajaków, dane
                                             kontaktowe znajdują się na serwisie
                                             internetowym. Oferujemy wynajem
                                             kajaków i dostarczenie ich na
@@ -140,29 +139,28 @@ const KajakiSusiecPage = () => {
                                             się widokiem kaskady na rzece.
                                         </p>
                                         <p class="text-gray-700 text-lg mb-4 pb-2">
-                                            Organizatorzy spływów: Spływy
-                                            kajakowe na Tanwi są organizowane
-                                            przez profesjonalnych organizatorów,
-                                            którzy zapewniają nie tylko
-                                            wypożyczenie sprzętu, ale również
-                                            serwis i transport na początek
-                                            trasy. Można z nimi skontaktować
-                                            się, korzystając z podanych danych
-                                            kontaktowych na kamizelkach.
+                                            Organizatorzy spływów są
+                                            organizowane przez profesjonalnych
+                                            organizatorów, którzy zapewniają nie
+                                            tylko wypożyczenie sprzętu, ale
+                                            również serwis i transport na
+                                            początek trasy. Można z nimi
+                                            skontaktować się, korzystając z
+                                            podanych danych kontaktowych na
+                                            kamizelkach.
                                         </p>
 
                                         <h2 className="text-xl lg:text-2xl font-bold py-2 mb-5">
                                             Skontaktuj się z nami i zarezerwuj
-                                            spływ paary - huta szumy!
+                                            spływ paary – huta szumy
                                         </h2>
                                         <p class="text-gray-700 text-lg mb-4 pb-2">
                                             Chcesz doświadczyć niezapomnianej
                                             przygody na wodzie? Spływy kajakowe
                                             po rzece to doskonały sposób na
                                             połączenie aktywnego wypoczynku z
-                                            pięknem natury. Spływy kajakowe na
-                                            Tanwi to wyjątkowa okazja, aby
-                                            odkryć urok rzeki w towarzystwie
+                                            pięknem natury. Wyjątkowa okazja,
+                                            aby odkryć urok rzeki w towarzystwie
                                             profesjonalnych przewodników. Spływy
                                             kajakowe susiec po rzece Tanew,
                                             nasza oferta zapewni Ci
@@ -197,9 +195,9 @@ const KajakiSusiecPage = () => {
                                             już dziś!
                                         </p>
                                         <div className="text-center space-y-3">
-                                            <h2 className="text-xl lg:text-2xl font-bold py-2 mb-2">
+                                            <h3 className="text-xl lg:text-2xl font-bold py-2 mb-2">
                                                 Dane kontaktowe:
-                                            </h2>
+                                            </h3>
                                             <Link
                                                 to="/kontakt"
                                                 type="button"
