@@ -9,9 +9,9 @@ const KajakiSusiecPage = () => {
         <Layout>
             <div className="overflow-hidden w-full z-10">
                 <div className="relative object-bottom flex items-center min-h-[12rem] max-h-[13rem] overflow-hidden justify-center w-full">
-                    <div className="w-full h-full -mt-4 -z-20">
+                    <div className="w-full h-full object-cover object-center -mt-4 -z-20">
                         <StaticImage
-                            className="w-full h-full object-cover object-center absolute inset-0"
+                            className="w-full h-full object-cover object-center min-h-full absolute inset-0"
                             loading="eager"
                             src="../assets/kajaki-tanew.jpg"
                             alt="kajaki susiec"
