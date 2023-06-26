@@ -194,7 +194,7 @@ const KajakiSusiecPage = () => {
                                             swój niezapomniany spływ kajakowy
                                             już dziś!
                                         </p>
-                                        <div className="text-center space-y-3">
+                                        <div className="space-y-3">
                                             <h3 className="text-xl lg:text-2xl font-bold py-2 mb-2">
                                                 Dane kontaktowe:
                                             </h3>
