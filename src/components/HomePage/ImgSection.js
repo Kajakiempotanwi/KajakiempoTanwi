@@ -63,8 +63,11 @@ const ImgSection = () => {
                 ))}
             </div>
             <div className="mt-4 mb-4 md:mt-10 md:mb-3">
-                <Link to="/galeria" className="btn_main">
+                <Link to="/galeria" className="btn_main mr-4">
                     Galeria
+                </Link>
+                <Link title="kajaki Susiec" to="/kajaki-susiec" className="btn_main">
+                    Więcej
                 </Link>
             </div>
         </section>

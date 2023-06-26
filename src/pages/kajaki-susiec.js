@@ -45,7 +45,7 @@ const KajakiSusiecPage = () => {
                                             Szukasz niezapomnianej przygody na
                                             wodzie? Chciałbyś poczuć dreszczyk
                                             emocji płynący z kajakowego spływu?
-                                            Przyjedź do Susiec i dołącz do
+                                            Przyjedź do Suśca i dołącz do
                                             naszej wypożyczalni kajaków, gdzie
                                             czeka na Ciebie fascynująca podróż
                                             na rzecze.
@@ -77,14 +77,14 @@ const KajakiSusiecPage = () => {
                                         </p>
                                         <h2 className="text-xl lg:text-2xl font-bold py-2 mb-5">
                                             Kilka informacji, które warto znać
-                                            przed rozpoczęciem spływu Kajaki
+                                            przed rozpoczęciem spływu - Kajaki
                                             Susiec
                                         </h2>
 
                                         <p class="text-gray-700 text-lg mb-4 pb-2">
                                             Planujesz niezapomnianą przygodę na
                                             wodzie? Spływy kajakowe na Tanwi w
-                                            Suscu to doskonały wybór dla
+                                            Suścu to doskonały wybór dla
                                             miłośników natury i aktywnego
                                             wypoczynku. Przed rozpoczęciem
                                             przygody, warto zebrać kilka
@@ -137,10 +137,9 @@ const KajakiSusiecPage = () => {
                                             się widokiem kaskady na rzece.
                                         </p>
                                         <p class="text-gray-700 text-lg mb-4 pb-2">
-                                            Organizatorzy spływów są
-                                            organizowane przez profesjonalnych
-                                            organizatorów, którzy zapewniają nie
-                                            tylko wypożyczenie sprzętu, ale
+                                            Organizacje spływów przez
+                                            profesjonalistów, którzy zapewniają
+                                            nie tylko wypożyczenie sprzętu, ale
                                             również serwis i transport na
                                             początek trasy. Można z nimi
                                             skontaktować się, korzystając z
