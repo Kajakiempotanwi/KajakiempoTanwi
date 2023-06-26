@@ -24,19 +24,17 @@ const KajakiSusiecPage = () => {
                 <section class="container -mt-32 lg:-mt-24 px-3 mx-auto ">
                     <section class=" mb-6 md:mb-12 text-gray-800">
                         <div class="container mx-auto xl:px-32 text-start lg:text-left">
-                            <div class="flex flex-col items-center md:items-center">
-                                <div className="md:px-12">
-                                    <StaticImage
-                                        className="h-72 w-72 lg:py-64 lg:px-96 rounded-xl shadow-xl"
-                                        loading="eager"
-                                        src="../assets/kajaki-tanew.jpg"
-                                        alt="kajaki susiec"
-                                        title="kajaki susiec"
-                                    />
-                                    <div className="flex items-start justify-end mx-3 space-x-4 my-4"></div>
-                                </div>
-                                <div class="pl-4 px-10 md:px-20">
-                                    <div class="block mt-1 -tracking-wide rounded-lg py-3 md:px-12 lg:-mr-14 text-start">
+                            <div class="flex flex-col items-center mt-3">
+                                <StaticImage
+                                    className="h-72 lg:py-64 w-[94%] rounded-xl shadow-xl"
+                                    loading="eager"
+                                    src="../assets/kajaki-tanew.jpg"
+                                    alt="kajaki susiec"
+                                    title="kajaki susiec"
+                                />
+                                <div className="flex items-start justify-end mx-3 space-x-4 my-3"></div>
+                                <div class="pl-4 px-10">
+                                    <div class="block mt-1 tracking-wide rounded-lg py-3 md:px-12 lg:-mr-14 text-start">
                                         <h1 class="text-2xl lg:text-3xl font-bold pb-2 mb-5">
                                             Zapraszamy na spływy kajakowe:
                                             <br />
